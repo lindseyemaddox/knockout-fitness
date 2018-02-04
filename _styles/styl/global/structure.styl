@@ -1,0 +1,77 @@
+
+$icon-width = 24px
+$sidebar-collapsed-width = 75px
+$sidebar-width = 280px
+$sidebar-vertical-padding = 35px
+$layout-max-width = 1000px
+
+.wrapper
+  max-width: $layout-max-width
+  margin: 0 auto
+
+.layout
+  background-color: rgba($white 0.67)
+
+  &.home
+    background-color: transparent
+
+  .main
+    width: 100%
+    z-index: 0
+
+    .grid
+      height: 100vh
+      margin: 0 auto
+      padding: $sidebar-vertical-padding 0 150px
+
+  .sidebar
+    bottom: 0
+    right: 0
+    padding: $sidebar-vertical-padding 0
+    position: absolute
+    top: 0
+    width: $sidebar-collapsed-width
+    z-index: 99
+
+  &--collapsed
+    animation: layout-slide 400ms 100ms forwards
+
+@keyframes rotate-toggle
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(-180deg)
+
+@keyframes icon-grow
+  0%
+    transform: scale(0)
+  50%
+    transform: scale(1.5)
+  100%
+    transform: scale(1)
+
+@keyframes hover-width
+  0%
+    width: 0px
+  80%
+    width: 220px
+  100%
+    width: 200px
+
+@keyframes link-opacity
+  0%
+    opacity: 0
+  80%
+    opacity: 0
+  90%
+    opacity: 30%
+  100%
+    opacity: 100%
+
+@keyframes layout-slide
+  0%
+    margin-left: $sidebar-width
+  30%
+    margin-left: $sidebar-width + $sidebar-collapsed-width
+  100%
+    margin-left: 0

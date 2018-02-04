@@ -1,0 +1,161 @@
+
+.slides
+  position: relative
+  overflow: hidden
+  height: 100% /* Or set a fixed height */
+
+.slider
+  height: 100%
+  white-space: nowrap
+  font-size: 0
+  transition: 0.8s
+
+.slider > *
+  font-size: 1rem
+  display: inline-block
+  white-space: normal
+  vertical-align: top
+  height: 100%
+  width: 100%
+  background: none 50% no-repeat
+  background-size: cover
+
+#s1:target ~ .slider
+  transform: translateX(0%)
+
+#s2:target ~ .slider
+  transform: translateX(-100%)
+
+#s3:target ~ .slider
+  transform: translateX(-200%)
+
+#s4:target ~ .slider
+  transform: translateX(-300%)
+
+a.icon-logo-text
+  color: $white
+  font-size: 15em
+  line-height: 0.3em
+  text-decoration: none
+
+.slider
+  color: $white
+
+  .button
+    button(300px)
+
+.s1
+
+  .icon-logo-text,
+  .icon-logo-pedro
+    display: block
+    font-size: 50em
+    line-height: 1.1em
+    padding-left: 0.12em
+
+  .icon-logo-pedro
+    line-height: 0em
+    margin-top: -573px
+    padding-left: .145em
+
+.s2
+
+  h2
+    primary-font($bold)
+    font-size: 1.625em
+    letter-spacing: 4px
+    line-height: 1.3846153846153846em
+    margin-top: 6.5em
+    text-transform: uppercase;
+
+  h3
+    primary-font($normal)
+    font-style: italic
+    font-size: 1.375em
+    line-height: 3.272727272727273em
+
+  h4
+    primary-font($semibold)
+    font-size: 0.9375em
+    line-height: 1.4666666666666666em
+
+.s3
+
+  h5
+    primary-font($light)
+    font-size: 1.8125em
+    letter-spacing: 2px
+    line-height: 1.2413793103448276em
+    margin: 100px 0 40px
+    text-transform: uppercase
+
+  span.icon-worms,
+  span.icon-bed,
+  span.icon-notebook
+    display: inline-block
+    font-size: 3.5em
+    line-height: 80px
+    margin-right: 15px
+    vertical-align: middle
+
+  span.icon-bed
+    font-size: 5em
+    margin-right: 10px
+
+  span.icon-notebook
+    font-size: 3em
+
+  h6
+    primary-font($semibold)
+    display: inline-block
+    font-size: 1.275em
+    letter-spacing: 4px
+    line-height: 1.2727272727272727em
+    text-transform: uppercase
+    vertical-align: middle
+
+  p
+    primary-font($normal)
+    font-size: 1.0625em
+    line-height: 1.6470588235294117em
+
+.s4
+
+  .cells
+    margin-top: 180px
+
+  .cell:nth-child(3)
+    text-align: right
+
+  p.heading
+    primary-font($light)
+    font-size: 1.5em
+    letter-spacing: 3px
+    line-height: 1.25em
+    padding-bottom: 12px
+    text-transform: uppercase
+
+  .icon-poles
+    display: block
+    font-size: 15em
+    text-align: center
+
+  p.body
+    primary-font($normal)
+    font-size: 0.9375em
+    line-height: 1.8666666666666667em
+    padding-bottom: 14px
+
+.cell
+  display: inline-block
+  vertical-align: top
+
+  &.three
+    width: 30%
+    margin-right: 4.5%
+
+    &:nth-of-type(3n)
+      margin-right: 0
+
+  .button
+    width: 100%
