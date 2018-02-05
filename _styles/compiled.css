@@ -190,9 +190,6 @@ svg:not(root) {
   content: "";
   clear: both;
 }
-html {
-  font-size: 16px;
-}
 /* fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
 .fancybox-wrap,
 .fancybox-skin,
@@ -245,9 +242,6 @@ html {
   line-height: 1.5em;
   margin: 0;
   padding: 15px;
-  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
-  font-weight: 300;
-  line-height: 1.5em;
   white-space: nowrap;
 }
 .fancybox-image,
@@ -369,9 +363,6 @@ html {
   visibility: hidden;
   font-size: 0.8em;
   line-height: 1.5em;
-  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
-  font-weight: 300;
-  line-height: 1.5em;
   position: relative;
   text-shadow: none;
   z-index: 8050;
@@ -428,6 +419,55 @@ html {
     background: url("../_images/fancybox_loading@2x.gif");
     background-size: 24px 24px /*The size of the normal image, half the size of the hi-res image*/;
   }
+}
+html {
+  font-size: 16px;
+}
+@font-face {
+  font-family: 'knockout';
+  font-style: normal;
+  font-weight: normal;
+  src: url("_fonts/knockout.eot?r15zpi");
+  src: url("_fonts/knockout.eot?r15zpi#iefix") format('embedded-opentype'), url("_fonts/knockout.woff2?r15zpi") format('woff2'), url("_fonts/knockout.ttf?r15zpi") format('truetype'), url("_fonts/knockout.woff?r15zpi") format('woff'), url("_fonts/knockout.svg?r15zpi#knockout") format('svg');
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'knockout' !important;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  speak: none;
+}
+.icon-arrow:before {
+  content: "\e900";
+}
+.icon-contact:before {
+  content: "\e901";
+}
+.icon-facebook:before {
+  content: "\e902";
+}
+.icon-glove:before {
+  content: "\e903";
+}
+.icon-group:before {
+  content: "\e904";
+}
+.icon-heart:before {
+  content: "\e905";
+}
+.icon-mindbody:before {
+  content: "\e906";
+}
+.icon-private:before {
+  content: "\e907";
+}
+.icon-weight:before {
+  content: "\e908";
 }
 @media (max-width: 1000px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1000px) and (min-resolution: 192dpi) {
   html {
@@ -870,21 +910,21 @@ form.nav_contact input {
   width: 100%;
 }
 form.nav_contact input[type='button'] {
-  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
-  font-weight: 600;
-  line-height: 1.5em;
-  outline: none;
-  border: none;
   background-color: #3db779;
+  border: 0;
   color: #d3cbbd;
   display: block;
   float: right;
   font-size: 13px;
-  margin-top: 15px;
-  padding: 1.2em 0;
-  text-transform: uppercase;
-  text-align: center;
   letter-spacing: 2px;
+  margin-top: 15px;
+  outline: 0;
+  padding: 1.2em 0;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 600;
+  line-height: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
   transition: all ease 400ms;
   width: 100%;
   text-indent: 0;
@@ -1034,9 +1074,6 @@ form.nav_contact input[type='button']:hover {
 .nav-pane.home .nav-items a .dropdown span.bar {
   background: #d3cbbd;
 }
-.nav-pane.home [class^="icon-"] {
-  display: none;
-}
 .nav-pane.open {
   transform: translateX(-286px);
   transition: 250ms;
@@ -1150,10 +1187,6 @@ form.nav_contact input[type='button']:hover {
 }
 .toggle-nav span.m {
   margin-left: 10px;
-}
-.toggle-nav span.m,
-.toggle-nav span.n,
-.toggle-nav span.u {
   display: inline-block;
   font-size: 0.75rem;
   opacity: 0;
@@ -1358,6 +1391,134 @@ footer {
   display: inline-block;
   vertical-align: bottom;
 }
+.icon-logo-full {
+  font-size: 40em;
+}
+h2.headline {
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+  font-size: 2.8125em;
+  color: #d3cbbd;
+  margin-top: -3.75em;
+  line-height: 1.3em;
+}
+h2.headline a {
+  font-style: italic;
+  color: #d3cbbd;
+  text-decoration: none;
+  transition: all 300ms ease;
+  border-bottom: 0px solid #3db779;
+}
+h2.headline a:hover {
+  color: #3db779;
+  border-bottom-width: 2px;
+}
+.overlay {
+  color: #d3cbbd;
+  padding: 60px 37px;
+}
+.overlay .headline {
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 600;
+  line-height: 1.5em;
+  font-size: 2.25em;
+  line-height: 1em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  white-space: nowrap;
+}
+.overlay .headline span {
+  vertical-align: middle;
+}
+.overlay .subhead {
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 600;
+  line-height: 1.5em;
+  font-size: 1.625em;
+  letter-spacing: 4px;
+  margin-top: 55px;
+  text-transform: uppercase;
+}
+.overlay .section-head {
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 600;
+  line-height: 1.5em;
+  font-size: 1.275em;
+  line-height: 1.186046511627907em;
+  letter-spacing: 3px;
+  margin: 22px 0 16px;
+  text-transform: uppercase;
+}
+.overlay p {
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: $regular;
+  line-height: 1.5em;
+  font-size: 1em;
+  line-height: 1.454545454545455em;
+  padding-bottom: 20px;
+}
+.overlay .heading {
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+  font-size: 1em;
+  line-height: 1.454545454545455em;
+  padding-bottom: 0;
+}
+.overlay .italic {
+  font-style: italic;
+}
+.overlay .button {
+  background-color: #3db779;
+  border: 0;
+  color: #d3cbbd;
+  display: block;
+  float: right;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-top: 15px;
+  outline: 0;
+  padding: 1.2em 0;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 600;
+  line-height: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all ease 400ms;
+  width: 300px;
+  float: none;
+  margin: 25px auto 0;
+}
+.overlay .button:after {
+  content: '\e959';
+  font-family: 'icomoon';
+  font-size: 14px;
+  padding-left: 10px;
+  vertical-align: bottom;
+}
+.overlay .button:hover {
+  background-color: #eb5937;
+  cursor: pointer;
+}
+.overlay.rates .subhead,
+.overlay.rates .section-head,
+.overlay.rates .heading,
+.overlay.rates p {
+  text-align: center;
+}
+.overlay.rates .section-head {
+  padding-bottom: 0;
+}
+.overlay.rates p {
+  padding-bottom: 5px;
+}
+.overlay.map .button {
+  margin-top: -100px;
+}
+.overlay.map img {
+  width: 100%;
+}
 .slides {
   position: relative;
   overflow: hidden;
@@ -1401,21 +1562,21 @@ a.icon-logo-text {
   color: #d3cbbd;
 }
 .slider .button {
-  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
-  font-weight: 600;
-  line-height: 1.5em;
-  outline: none;
-  border: none;
   background-color: #3db779;
+  border: 0;
   color: #d3cbbd;
   display: block;
   float: right;
   font-size: 13px;
-  margin-top: 15px;
-  padding: 1.2em 0;
-  text-transform: uppercase;
-  text-align: center;
   letter-spacing: 2px;
+  margin-top: 15px;
+  outline: 0;
+  padding: 1.2em 0;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 600;
+  line-height: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
   transition: all ease 400ms;
   width: 300px;
 }
@@ -1554,6 +1715,12 @@ a.icon-logo-text {
 .cell .button {
   width: 100%;
 }
+.icon-logo-full-outline {
+  font-size: 3.25em;
+}
+.icon-logo-full-outline [class^="path"]:before {
+  color: #1c1919;
+}
 #warp {
   width: 100%;
   max-width: 1000px;
@@ -1683,140 +1850,6 @@ input.gallery-selector {
 }
 label.gallery-label {
   cursor: pointer;
-}
-.icon-logo-full {
-  font-size: 40em;
-}
-h2.headline {
-  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
-  font-weight: 300;
-  line-height: 1.5em;
-  font-size: 2.8125em;
-  color: #d3cbbd;
-  margin-top: -3.75em;
-  line-height: 1.3em;
-}
-h2.headline a {
-  font-style: italic;
-  color: #d3cbbd;
-  text-decoration: none;
-  transition: all 300ms ease;
-  border-bottom: 0px solid #3db779;
-}
-h2.headline a:hover {
-  color: #3db779;
-  border-bottom-width: 2px;
-}
-.overlay {
-  color: #d3cbbd;
-  padding: 60px 37px;
-}
-.overlay .headline {
-  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
-  font-weight: 600;
-  line-height: 1.5em;
-  font-size: 2.25em;
-  line-height: 1em;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  white-space: nowrap;
-}
-.overlay .headline span {
-  vertical-align: middle;
-}
-.overlay .subhead {
-  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
-  font-weight: 600;
-  line-height: 1.5em;
-  font-size: 1.625em;
-  letter-spacing: 4px;
-  margin-top: 55px;
-  text-transform: uppercase;
-}
-.overlay .section-head {
-  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
-  font-weight: 600;
-  line-height: 1.5em;
-  font-size: 1.275em;
-  line-height: 1.186046511627907em;
-  letter-spacing: 3px;
-  margin: 22px 0 16px;
-  text-transform: uppercase;
-}
-.overlay p {
-  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
-  font-weight: $regular;
-  line-height: 1.5em;
-  font-size: 1em;
-  line-height: 1.454545454545455em;
-  padding-bottom: 20px;
-}
-.overlay .heading {
-  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
-  font-weight: 300;
-  line-height: 1.5em;
-  font-size: 1em;
-  line-height: 1.454545454545455em;
-  padding-bottom: 0;
-}
-.overlay .italic {
-  font-style: italic;
-}
-.overlay .button {
-  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
-  font-weight: 600;
-  line-height: 1.5em;
-  outline: none;
-  border: none;
-  background-color: #3db779;
-  color: #d3cbbd;
-  display: block;
-  float: right;
-  font-size: 13px;
-  margin-top: 15px;
-  padding: 1.2em 0;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 2px;
-  transition: all ease 400ms;
-  width: 300px;
-  float: none;
-  margin: 25px auto 0;
-}
-.overlay .button:after {
-  content: '\e959';
-  font-family: 'icomoon';
-  font-size: 14px;
-  padding-left: 10px;
-  vertical-align: bottom;
-}
-.overlay .button:hover {
-  background-color: #eb5937;
-  cursor: pointer;
-}
-.overlay.rates .subhead,
-.overlay.rates .section-head,
-.overlay.rates .heading,
-.overlay.rates p {
-  text-align: center;
-}
-.overlay.rates .section-head {
-  padding-bottom: 0;
-}
-.overlay.rates p {
-  padding-bottom: 5px;
-}
-.overlay.map .button {
-  margin-top: -100px;
-}
-.overlay.map img {
-  width: 100%;
-}
-.icon-logo-full-outline {
-  font-size: 3.25em;
-}
-.icon-logo-full-outline [class^="path"]:before {
-  color: #1c1919;
 }
 @media (max-width: 2000px) and (-webkit-max-device-pixel-ratio: 1.5), (max-width: 2000px) and (max-resolution: 191dpi) {
   .background-image {
