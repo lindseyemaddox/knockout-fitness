@@ -576,37 +576,6 @@
 		"oAP": "\/_includes\/video\/html5video\/.htaccess",
 		"oF": 0
 		},
-	"\/_includes\/video\/html5video\/AE_Website_Video.jpg": {
-		"ft": 16384,
-		"iS": 220638,
-		"oA": 0,
-		"oAP": "\/_includes\/video\/html5video\/AE_Website_Video.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/_includes\/video\/html5video\/AE_Website_Video.m4v": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/_includes\/video\/html5video\/AE_Website_Video.m4v",
-		"oF": 0
-		},
-	"\/_includes\/video\/html5video\/AE_Website_Video.mp4": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/_includes\/video\/html5video\/AE_Website_Video.mp4",
-		"oF": 0
-		},
-	"\/_includes\/video\/html5video\/AE_Website_Video.webm": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/_includes\/video\/html5video\/AE_Website_Video.webm",
-		"oF": 0
-		},
 	"\/_includes\/video\/html5video\/flashfox.swf": {
 		"cB": 0,
 		"ft": 8192,
@@ -614,68 +583,37 @@
 		"oAP": "\/_includes\/video\/html5video\/flashfox.swf",
 		"oF": 0
 		},
-	"\/_includes\/video3\/html5video\/.htaccess": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/_includes\/video3\/html5video\/.htaccess",
-		"oF": 0
-		},
-	"\/_includes\/video3\/html5video\/AE_Website_Video_3.jpg": {
+	"\/_includes\/video\/html5video\/walking.jpg": {
 		"ft": 16384,
-		"iS": 63626,
+		"iS": 94339,
 		"oA": 0,
-		"oAP": "\/_includes\/video3\/html5video\/AE_Website_Video_3.jpg",
+		"oAP": "\/_includes\/video\/html5video\/walking.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/_includes\/video3\/html5video\/AE_Website_Video_3.m4v": {
+	"\/_includes\/video\/html5video\/walking.m4v": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/_includes\/video3\/html5video\/AE_Website_Video_3.m4v",
+		"oAP": "\/_includes\/video\/html5video\/walking.m4v",
 		"oF": 0
 		},
-	"\/_includes\/video3\/html5video\/AE_Website_Video_3.mp4": {
+	"\/_includes\/video\/html5video\/walking.webm": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/_includes\/video3\/html5video\/AE_Website_Video_3.mp4",
+		"oAP": "\/_includes\/video\/html5video\/walking.webm",
 		"oF": 0
 		},
-	"\/_includes\/video3\/html5video\/AE_Website_Video_3.webm": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/_includes\/video3\/html5video\/AE_Website_Video_3.webm",
-		"oF": 0
-		},
-	"\/_includes\/video3\/html5video\/flashfox.swf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/_includes\/video3\/html5video\/flashfox.swf",
-		"oF": 0
-		},
-	"\/_includes\/video3\/html5video\/html5ext.js": {
+	"\/_scripts\/html5ext.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/_includes\/video3\/html5video\/html5ext-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/_scripts\/flexslider.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/_scripts\/flexslider-min.js",
-		"oF": 0,
+		"oAP": "\/_scripts\/min\/html5ext-min.js",
+		"oF": 2,
 		"sC": 3,
 		"tS": 0
 		},
@@ -685,16 +623,6 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/_scripts\/main-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/_scripts\/min\/flexslider-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/_scripts\/min\/flexslider-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -744,8 +672,8 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/_scripts\/nav-min.js",
-		"oF": 0,
+		"oAP": "\/_scripts\/min\/nav-min.js",
+		"oF": 2,
 		"sC": 3,
 		"tS": 0
 		},
