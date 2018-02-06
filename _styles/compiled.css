@@ -424,17 +424,17 @@ html {
   font-size: 16px;
 }
 @font-face {
-  font-family: 'knockout';
+  font-family: 'knockout-fitness';
   font-style: normal;
   font-weight: normal;
-  src: url("_fonts/knockout.eot?r15zpi");
-  src: url("_fonts/knockout.eot?r15zpi#iefix") format('embedded-opentype'), url("_fonts/knockout.woff2?r15zpi") format('woff2'), url("_fonts/knockout.ttf?r15zpi") format('truetype'), url("_fonts/knockout.woff?r15zpi") format('woff'), url("_fonts/knockout.svg?r15zpi#knockout") format('svg');
+  src: url("/_fonts/knockout.eot?7ogbj9");
+  src: url("/_fonts/knockout.eot?7ogbj9#iefix") format('embedded-opentype'), url("/_fonts/knockout.woff2?7ogbj9") format('woff2'), url("/_fonts/knockout.ttf?7ogbj9") format('truetype'), url("/_fonts/knockout.woff?7ogbj9") format('woff'), url("/_fonts/knockout.svg?7ogbj9#knockout") format('svg');
 }
 [class^="icon-"],
 [class*=" icon-"] {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: 'knockout' !important;
+  font-family: 'knockout-fitness';
   font-style: normal;
   font-variant: normal;
   font-weight: normal;

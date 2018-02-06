@@ -16,6 +16,44 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/_fonts\/knockout-fitness.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/_fonts\/knockout-fitness.eot",
+		"oF": 0
+		},
+	"\/_fonts\/knockout-fitness.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/_fonts\/knockout-fitness.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/_fonts\/knockout-fitness.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/_fonts\/knockout-fitness.ttf",
+		"oF": 0
+		},
+	"\/_fonts\/knockout-fitness.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/_fonts\/knockout-fitness.woff",
+		"oF": 0
+		},
+	"\/_fonts\/knockout-fitness.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/_fonts\/knockout-fitness.woff2",
+		"oF": 0
+		},
 	"\/_images\/extralarge\/bags.jpg": {
 		"ft": 16384,
 		"iS": 871754,
