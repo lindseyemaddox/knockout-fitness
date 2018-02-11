@@ -424,23 +424,23 @@ html {
   font-size: 16px;
 }
 @font-face {
-  font-family: 'knockout-fitness';
+  font-family: 'knockout';
   font-style: normal;
   font-weight: normal;
-  src: url("/_fonts/knockout.eot?7ogbj9");
-  src: url("/_fonts/knockout.eot?7ogbj9#iefix") format('embedded-opentype'), url("/_fonts/knockout.woff2?7ogbj9") format('woff2'), url("/_fonts/knockout.ttf?7ogbj9") format('truetype'), url("/_fonts/knockout.woff?7ogbj9") format('woff'), url("/_fonts/knockout.svg?7ogbj9#knockout") format('svg');
+  src: url("/Users/lindseymaddox/src/knockout-fitness/_fonts/knockout.eot?6w4obi");
+  src: url("/Users/lindseymaddox/src/knockout-fitness/_fonts/knockout.eot?6w4obi#iefix") format('embedded-opentype'), url("/Users/lindseymaddox/src/knockout-fitness/_fonts/knockout.woff2?6w4obi") format('woff2'), url("/Users/lindseymaddox/src/knockout-fitness/_fonts/knockout.ttf?6w4obi") format('truetype'), url("/Users/lindseymaddox/src/knockout-fitness/_fonts/knockout.woff?6w4obi") format('woff'), url("/Users/lindseymaddox/src/knockout-fitness/_fonts/knockout.svg?6w4obi#knockout") format('svg');
 }
 [class^="icon-"],
 [class*=" icon-"] {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: 'knockout-fitness';
+  font-family: 'knockout' !important;
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
   line-height: 1;
-  text-transform: none;
   speak: none;
+  text-transform: none;
 }
 .icon-arrow:before {
   content: "\e900";
