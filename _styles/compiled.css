@@ -647,8 +647,8 @@ html {
   font-family: 'knockout';
   font-style: normal;
   font-weight: normal;
-  src: url("/Users/lindseymaddox/src/knockout-fitness/_fonts/knockout.eot?6w4obi");
-  src: url("/Users/lindseymaddox/src/knockout-fitness/_fonts/knockout.eot?6w4obi#iefix") format('embedded-opentype'), url("/Users/lindseymaddox/src/knockout-fitness/_fonts/knockout.woff2?6w4obi") format('woff2'), url("/Users/lindseymaddox/src/knockout-fitness/_fonts/knockout.ttf?6w4obi") format('truetype'), url("/Users/lindseymaddox/src/knockout-fitness/_fonts/knockout.woff?6w4obi") format('woff'), url("/Users/lindseymaddox/src/knockout-fitness/_fonts/knockout.svg?6w4obi#knockout") format('svg');
+  src: url("/Users/lindseymaddox/src/knockout-fitness/_fonts/knockout.eot?7hnaqn");
+  src: url("/Users/lindseymaddox/src/knockout-fitness/_fonts/knockout.eot?7hnaqn#iefix") format('embedded-opentype'), url("/Users/lindseymaddox/src/knockout-fitness/_fonts/knockout.woff2?7hnaqn") format('woff2'), url("/Users/lindseymaddox/src/knockout-fitness/_fonts/knockout.ttf?7hnaqn") format('truetype'), url("/Users/lindseymaddox/src/knockout-fitness/_fonts/knockout.woff?7hnaqn") format('woff'), url("/Users/lindseymaddox/src/knockout-fitness/_fonts/knockout.svg?7hnaqn#knockout") format('svg');
 }
 [class^="icon-"],
 [class*=" icon-"] {
@@ -941,8 +941,10 @@ form.nav_contact input[type='button']:hover {
   cursor: pointer;
 }
 .nav-pane .nav-items {
-  margin: 10px auto 0;
+  height: 100%;
   letter-spacing: 4px;
+  margin: 10px auto 0;
+  position: relative;
 }
 .nav-pane .nav-items .sub.phones {
   padding-left: 50px;
@@ -1002,7 +1004,7 @@ form.nav_contact input[type='button']:hover {
   font-size: 0.475em;
 }
 [class^="list"] {
-  position: relative;
+  position: absolute;
 }
 [class^="list"] input.droppers {
   position: absolute;
@@ -1191,6 +1193,22 @@ input:checked ~ [class^="icon"] span.bar:nth-child(2) {
   transform-origin: center center;
   margin: 0px 0px 21.5px -2px;
 }
+.listtwo {
+  top: 60px;
+}
+.listthree {
+  bottom: 140px;
+}
+.listfour {
+  bottom: 80px;
+}
+.listfive {
+  bottom: 20px;
+}
+.nav-pane .nav-items .sub.form,
+.nav-pane .nav-items .sub.phones {
+  display: none;
+}
 .background-overlay {
   background: rgba(211,203,189,0.6);
   border-top: 4px solid #c33;
@@ -1216,29 +1234,6 @@ video {
   transform: translateX(-50%) translateY(-50%);
   width: auto;
   z-index: -1;
-}
-.background-image {
-  background-image: url("../_images/extralarge/reflection.jpg");
-  background-position: center;
-  background-size: cover;
-  bottom: 0;
-  opacity: 0.6;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 0;
-}
-.background-image:after {
-  bottom: 0;
-  content: '';
-  height: 5px;
-  left: 0;
-  position: fixed;
-  right: 0;
-  width: 100%;
-}
-.background-image.home {
-  opacity: 1;
 }
 .testimonials {
   position: absolute;

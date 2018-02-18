@@ -28,8 +28,10 @@ nav-icon-view()
     display: none
 
 .nav-pane .nav-items
-  margin: 10px auto 0
+  height: 100%
   letter-spacing: 4px
+  margin: 10px auto 0
+  position: relative
 
   .sub.phones
     padding-left: 50px
@@ -84,7 +86,7 @@ nav-icon-view()
         font-size: .475em
 
 [class^="list"]
-  position: relative
+  position: absolute
 
   input.droppers
     position: absolute
@@ -253,3 +255,20 @@ input:checked ~ [class^="icon"]
     transform: rotate(40deg)
     transform-origin: center center
     margin: 0px 0px 21.5px -2px
+
+.listtwo
+  top: 60px
+
+.listthree
+  bottom: 140px
+
+.listfour
+  bottom: 80px
+
+.listfive
+  bottom: 20px
+
+.nav-pane .nav-items
+  .sub.form,
+  .sub.phones
+    display: none
