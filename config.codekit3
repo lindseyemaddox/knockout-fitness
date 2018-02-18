@@ -54,6 +54,17 @@
 		"oAP": "\/_fonts\/knockout.woff2",
 		"oF": 0
 		},
+	"\/_images\/burned.png": {
+		"ft": 32768,
+		"iS": 268646,
+		"oA": 0,
+		"oAP": "\/_images\/burned.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/_images\/extralarge\/bags.jpg": {
 		"ft": 16384,
 		"iS": 871754,
