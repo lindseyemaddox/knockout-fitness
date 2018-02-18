@@ -1,4 +1,3 @@
-@import "var"
 
 @font-face
   font-family: 'knockout'
@@ -7,7 +6,8 @@
   src: url($font-path + 'knockout.eot?6w4obi')
   src: url($font-path + 'knockout.eot?6w4obi#iefix') format('embedded-opentype'), url($font-path + 'knockout.woff2?6w4obi') format('woff2'), url($font-path + 'knockout.ttf?6w4obi') format('truetype'), url($font-path + 'knockout.woff?6w4obi') format('woff'), url($font-path + 'knockout.svg?6w4obi#knockout') format('svg')
 
-[class^="icon-"], [class*=" icon-"]
+[class^="icon-"],
+[class*=" icon-"]
   -moz-osx-font-smoothing: grayscale
   -webkit-font-smoothing: antialiased
   font-family: 'knockout'!important
@@ -18,30 +18,31 @@
   speak: none
   text-transform: none
 
-.icon-arrow
-  &:before
+.icon-
+
+  &arrow:before
     content: $icon-arrow
-.icon-contact
-  &:before
+
+  &contact:before
     content: $icon-contact
-.icon-facebook
-  &:before
+
+  &facebook:before
     content: $icon-facebook
-.icon-glove
-  &:before
+
+  &glove:before
     content: $icon-glove
-.icon-group
-  &:before
+
+  &group:before
     content: $icon-group
-.icon-heart
-  &:before
+
+  &heart:before
     content: $icon-heart
-.icon-mindbody
-  &:before
+
+  &mindbody:before
     content: $icon-mindbody
-.icon-private
-  &:before
+
+  &private:before
     content: $icon-private
-.icon-weight
-  &:before
+
+  &weight:before
     content: $icon-weight

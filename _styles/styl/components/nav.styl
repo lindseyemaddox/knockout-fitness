@@ -3,9 +3,6 @@ nav-icon-view()
 
   .nav-items
 
-    .dropdown
-      display: none
-
     a
       cursor: pointer
       transition: color 200ms ease
@@ -30,91 +27,11 @@ nav-icon-view()
   [class^="icon-"]
     display: none
 
-nav-list-view()
-
-  .nav-items
-    margin-left: 10px
-
-    .dropdown
-      display: inline-block
-      width: 100%
-      height: 40px
-
-    a[class^="icon-"]
-      display: block
-      margin-bottom: 15px
-
-    a
-      cursor: pointer
-      text-align: left
-      width: 80%
-      line-height: 0.1em
-      text-decoration: none
-
-      span
-        display: inline-block
-
-        &.icon-pin
-          vertical-align: middle
-
-        &.map
-          font-size: 0.65em
-          margin-right: 0
-          vertical-align: middle
-          line-height: 1.4em
-
-      &:hover span
-        color: $green
-
-      .list-item
-        opacity: 1
-        display: inline
-        margin-left: 0
-        position: inherit
-        height: inherit
-        line-height: 1em
-        background-color: transparent
-        padding: inherit
-
-        span
-          padding-left: 51px
-
-    [class^="list"] input:checked
-
-      & ~ .sub
-        height: 40px
-        margin-bottom: 10px
-
-        &:last-child
-          margin-bottom: 27px
-
-        &.phones
-          margin-bottom: 20px
-          height: auto
-
-          a
-            line-height: 1em
-
-        &.form
-          height: auto//needs a px value
-          padding-left: 70px
-
-        &.socials
-          height: 60px
-
-      & ~ .icon-dropdown
-        transition: 250ms
-        transform: rotate(180deg)
-
-  [class^="list"] label
-    display: inline-block
-
 .nav-pane .nav-items
-  margin: 111px auto 0
+  margin: 10px auto 0
   letter-spacing: 4px
 
   .sub.phones
-    margin-top: 20px
     padding-left: 50px
 
     a
@@ -129,8 +46,8 @@ nav-list-view()
   a
     display: block
     text-align: center
-    font-size: 3.5em
-    height: 63px
+    font-size: 5em
+    // height: 63px
     padding-left: 20px
 
     &:before
@@ -204,9 +121,10 @@ nav-list-view()
 
       &:hover:before
         color: $green
+        transition: color 400ms ease
 
       &:before
-        color: $white
+        color: $red
 
       span
         color: $white

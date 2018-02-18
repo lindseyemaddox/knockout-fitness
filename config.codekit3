@@ -801,7 +801,7 @@
 		"oS": 0,
 		"rrU": 0
 		},
-	"\/_styles\/styl\/global\/colors.styl": {
+	"\/_styles\/styl\/global\/_var.styl": {
 		"aP": 0,
 		"bl": 0,
 		"dS": 0,
@@ -809,7 +809,20 @@
 		"iC": 0,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/_styles\/styl\/global\/colors.css",
+		"oAP": "\/_styles\/styl\/global\/_var.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
+	"\/_styles\/styl\/global\/animations.styl": {
+		"aP": 0,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_styles\/styl\/global\/animations.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
@@ -888,19 +901,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/_styles\/styl\/global\/structure.css",
-		"oF": 0,
-		"oS": 0,
-		"rrU": 0
-		},
-	"\/_styles\/styl\/global\/var.styl": {
-		"aP": 0,
-		"bl": 0,
-		"dS": 0,
-		"ft": 8,
-		"iC": 0,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/_styles\/styl\/global\/var.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0
