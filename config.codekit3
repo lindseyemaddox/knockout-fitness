@@ -7,7 +7,7 @@
 		"uuidString": "6F93A0C2-226B-4FE0-AEDC-E66E277B8B86"
 		}
 	],
-"creatorBuild": "26261",
+"creatorBuild": "26268",
 "files": {
 	"\/.gitignore": {
 		"cB": 0,
@@ -212,6 +212,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/knockout-fitness.png": {
+		"ft": 32768,
+		"iS": 918804,
+		"oA": 0,
+		"oAP": "\/_images\/knockout-fitness.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/_images\/knockout-fitness_og.jpg": {
@@ -598,58 +609,75 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/_includes\/video.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/_includes\/video.html",
-		"oF": 0
-		},
 	"\/_includes\/video.jade": {
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/_includes\/video.html",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0
 		},
-	"\/_includes\/video\/html5video\/.htaccess": {
+	"\/_includes\/video\/.htaccess": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/_includes\/video\/html5video\/.htaccess",
+		"oAP": "\/_includes\/video\/.htaccess",
 		"oF": 0
 		},
-	"\/_includes\/video\/html5video\/flashfox.swf": {
+	"\/_includes\/video\/flashfox.swf": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/_includes\/video\/html5video\/flashfox.swf",
+		"oAP": "\/_includes\/video\/flashfox.swf",
 		"oF": 0
 		},
-	"\/_includes\/video\/html5video\/walking.jpg": {
+	"\/_includes\/video\/html5ext.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/_includes\/video\/html5ext-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/_includes\/video\/walking-howto.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/_includes\/video\/qt_temp.BT3385",
+		"oF": 0
+		},
+	"\/_includes\/video\/walking.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/_includes\/video\/walking.html",
+		"oF": 0
+		},
+	"\/_includes\/video\/walking.jpg": {
 		"ft": 16384,
-		"iS": 94339,
+		"iS": 126153,
 		"oA": 0,
-		"oAP": "\/_includes\/video\/html5video\/walking.jpg",
+		"oAP": "\/_includes\/video\/walking.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/_includes\/video\/html5video\/walking.m4v": {
+	"\/_includes\/video\/walking.m4v": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/_includes\/video\/html5video\/walking.m4v",
+		"oAP": "\/_includes\/video\/walking.m4v",
 		"oF": 0
 		},
-	"\/_includes\/video\/html5video\/walking.webm": {
+	"\/_includes\/video\/walking.webm": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/_includes\/video\/html5video\/walking.webm",
+		"oAP": "\/_includes\/video\/walking.webm",
 		"oF": 0
 		},
 	"\/_scripts\/html5ext.js": {
@@ -1409,6 +1437,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
