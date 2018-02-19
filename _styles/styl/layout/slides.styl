@@ -1,24 +1,24 @@
 
 .slides
-  position: relative
-  overflow: hidden
   height: 100% /* Or set a fixed height */
+  overflow: hidden
+  position: relative
 
 .slider
-  height: 100%
-  white-space: nowrap
   font-size: 0
+  height: 100%
   transition: 0.8s
+  white-space: nowrap
 
 .slider > *
-  font-size: 1rem
-  display: inline-block
-  white-space: normal
-  vertical-align: top
-  height: 100%
-  width: 100%
   background: none 50% no-repeat
   background-size: cover
+  display: inline-block
+  font-size: 1rem
+  height: 100%
+  vertical-align: top
+  white-space: normal
+  width: 100%
 
 #s1:target ~ .slider
   transform: translateX(0%)
@@ -32,52 +32,64 @@
 #s4:target ~ .slider
   transform: translateX(-300%)
 
-a.icon-logo-text
-  color: $white
-  font-size: 15em
-  line-height: 0.3em
-  text-decoration: none
-
 .slider
   color: $white
 
   .button
     button(300px)
 
-.s1
-
-  .icon-logo-text,
-  .icon-logo-pedro
-    display: block
-    font-size: 50em
-    line-height: 1.1em
-    padding-left: 0.12em
-
-  .icon-logo-pedro
-    line-height: 0em
-    margin-top: -573px
-    padding-left: .145em
-
 .s2
 
   h2
+    font-size: 1.5em
+    letter-spacing: 1px
+    line-height: 1.2em
+    margin-top: 5em
+    padding-bottom: 30px
     primary-font($bold)
-    font-size: 1.625em
-    letter-spacing: 4px
-    line-height: 1.3846153846153846em
-    margin-top: 6.5em
-    text-transform: uppercase;
+    text-transform: uppercase
 
   h3
-    primary-font($normal)
-    font-style: italic
     font-size: 1.375em
-    line-height: 3.272727272727273em
+    letter-spacing: 3px
+    padding: 16px 0 10px 90px
+    primary-font($bold)
+    line-height: 1.3em
+    text-transform: uppercase
 
   h4
-    primary-font($semibold)
     font-size: 0.9375em
     line-height: 1.4666666666666666em
+    primary-font($semibold)
+
+  span.icon-glove,
+  span.icon-weight,
+  span.icon-heart
+    font-size: 3.5em
+    left: 0
+    line-height: 80px
+    position: absolute
+    top: 0
+
+  span.icon-weight
+    font-size: 4.5em
+    padding-top: 3px
+
+  p
+    font-size: 0.85em
+    line-height: 1.6470588235294117em
+    primary-font($normal)
+
+  .cell.three
+    width: 25%
+    &.first
+      width: 36%
+      h3
+        padding-left: 70px
+    &.last
+      width: 29%
+      h3
+        padding-left: 70px
 
 .s3
 
@@ -89,22 +101,6 @@ a.icon-logo-text
     margin: 100px 0 40px
     text-transform: uppercase
 
-  span.icon-worms,
-  span.icon-bed,
-  span.icon-notebook
-    display: inline-block
-    font-size: 3.5em
-    line-height: 80px
-    margin-right: 15px
-    vertical-align: middle
-
-  span.icon-bed
-    font-size: 5em
-    margin-right: 10px
-
-  span.icon-notebook
-    font-size: 3em
-
   h6
     primary-font($semibold)
     display: inline-block
@@ -113,11 +109,6 @@ a.icon-logo-text
     line-height: 1.2727272727272727em
     text-transform: uppercase
     vertical-align: middle
-
-  p
-    primary-font($normal)
-    font-size: 1.0625em
-    line-height: 1.6470588235294117em
 
 .s4
 
@@ -135,11 +126,6 @@ a.icon-logo-text
     padding-bottom: 12px
     text-transform: uppercase
 
-  .icon-poles
-    display: block
-    font-size: 15em
-    text-align: center
-
   p.body
     primary-font($normal)
     font-size: 0.9375em
@@ -148,11 +134,12 @@ a.icon-logo-text
 
 .cell
   display: inline-block
+  position: relative
   vertical-align: top
 
   &.three
-    width: 30%
     margin-right: 4.5%
+    width: 30%
 
     &:nth-of-type(3n)
       margin-right: 0

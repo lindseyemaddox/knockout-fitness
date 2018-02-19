@@ -1031,6 +1031,7 @@ form.nav_contact input[type='button']:hover {
 }
 .nav-pane .nav-items a {
   cursor: pointer;
+  text-decoration: none;
   transition: color 200ms ease;
 }
 .nav-pane .nav-items a .list-item {
@@ -1227,7 +1228,7 @@ input:checked ~ [class^="icon"] span.bar:nth-child(2) {
 }
 video {
   background-size: cover;
-  height: 103%;
+  height: 110%;
   left: 50%;
   position: fixed;
   top: 48.5%;
@@ -1309,6 +1310,9 @@ footer {
 .logo {
   margin: 10vh 15% 0;
   width: 70%;
+}
+.snipe {
+  width: 180px;
 }
 h2.headline {
   color: #d3cbbd;
@@ -1436,25 +1440,25 @@ h2.headline a:hover {
   width: 100%;
 }
 .slides {
-  position: relative;
-  overflow: hidden;
   height: 100% /* Or set a fixed height */;
+  overflow: hidden;
+  position: relative;
 }
 .slider {
-  height: 100%;
-  white-space: nowrap;
   font-size: 0;
+  height: 100%;
   transition: 0.8s;
+  white-space: nowrap;
 }
 .slider > * {
-  font-size: 1rem;
-  display: inline-block;
-  white-space: normal;
-  vertical-align: top;
-  height: 100%;
-  width: 100%;
   background: none 50% no-repeat;
   background-size: cover;
+  display: inline-block;
+  font-size: 1rem;
+  height: 100%;
+  vertical-align: top;
+  white-space: normal;
+  width: 100%;
 }
 #s1:target ~ .slider {
   transform: translateX(0%);
@@ -1467,12 +1471,6 @@ h2.headline a:hover {
 }
 #s4:target ~ .slider {
   transform: translateX(-300%);
-}
-a.icon-logo-text {
-  color: #d3cbbd;
-  font-size: 15em;
-  line-height: 0.3em;
-  text-decoration: none;
 }
 .slider {
   color: #d3cbbd;
@@ -1507,42 +1505,68 @@ a.icon-logo-text {
   background-color: $orange;
   cursor: pointer;
 }
-.s1 .icon-logo-text,
-.s1 .icon-logo-pedro {
-  display: block;
-  font-size: 50em;
-  line-height: 1.1em;
-  padding-left: 0.12em;
-}
-.s1 .icon-logo-pedro {
-  line-height: 0em;
-  margin-top: -573px;
-  padding-left: 0.145em;
-}
 .s2 h2 {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  line-height: 1.2em;
+  margin-top: 5em;
+  padding-bottom: 30px;
   font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
   font-weight: 700;
   line-height: 1.5em;
-  font-size: 1.625em;
-  letter-spacing: 4px;
-  line-height: 1.384615384615385em;
-  margin-top: 6.5em;
   text-transform: uppercase;
 }
 .s2 h3 {
-  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
-  font-weight: 400;
-  line-height: 1.5em;
-  font-style: italic;
   font-size: 1.375em;
-  line-height: 3.272727272727273em;
+  letter-spacing: 3px;
+  padding: 16px 0 10px 90px;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 700;
+  line-height: 1.5em;
+  line-height: 1.3em;
+  text-transform: uppercase;
 }
 .s2 h4 {
+  font-size: 0.9375em;
+  line-height: 1.466666666666667em;
   font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
   font-weight: 600;
   line-height: 1.5em;
-  font-size: 0.9375em;
-  line-height: 1.466666666666667em;
+}
+.s2 span.icon-glove,
+.s2 span.icon-weight,
+.s2 span.icon-heart {
+  font-size: 3.5em;
+  left: 0;
+  line-height: 80px;
+  position: absolute;
+  top: 0;
+}
+.s2 span.icon-weight {
+  font-size: 4.5em;
+  padding-top: 3px;
+}
+.s2 p {
+  font-size: 0.85em;
+  line-height: 1.647058823529412em;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+.s2 .cell.three {
+  width: 25%;
+}
+.s2 .cell.three.first {
+  width: 36%;
+}
+.s2 .cell.three.first h3 {
+  padding-left: 70px;
+}
+.s2 .cell.three.last {
+  width: 29%;
+}
+.s2 .cell.three.last h3 {
+  padding-left: 70px;
 }
 .s3 h5 {
   font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
@@ -1554,22 +1578,6 @@ a.icon-logo-text {
   margin: 100px 0 40px;
   text-transform: uppercase;
 }
-.s3 span.icon-worms,
-.s3 span.icon-bed,
-.s3 span.icon-notebook {
-  display: inline-block;
-  font-size: 3.5em;
-  line-height: 80px;
-  margin-right: 15px;
-  vertical-align: middle;
-}
-.s3 span.icon-bed {
-  font-size: 5em;
-  margin-right: 10px;
-}
-.s3 span.icon-notebook {
-  font-size: 3em;
-}
 .s3 h6 {
   font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
   font-weight: 600;
@@ -1580,13 +1588,6 @@ a.icon-logo-text {
   line-height: 1.272727272727273em;
   text-transform: uppercase;
   vertical-align: middle;
-}
-.s3 p {
-  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
-  font-weight: 400;
-  line-height: 1.5em;
-  font-size: 1.0625em;
-  line-height: 1.647058823529412em;
 }
 .s4 .cells {
   margin-top: 180px;
@@ -1604,11 +1605,6 @@ a.icon-logo-text {
   padding-bottom: 12px;
   text-transform: uppercase;
 }
-.s4 .icon-poles {
-  display: block;
-  font-size: 15em;
-  text-align: center;
-}
 .s4 p.body {
   font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
   font-weight: 400;
@@ -1619,11 +1615,12 @@ a.icon-logo-text {
 }
 .cell {
   display: inline-block;
+  position: relative;
   vertical-align: top;
 }
 .cell.three {
-  width: 30%;
   margin-right: 4.5%;
+  width: 30%;
 }
 .cell.three:nth-of-type(3n) {
   margin-right: 0;

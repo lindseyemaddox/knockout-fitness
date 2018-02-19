@@ -16,6 +16,37 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/_fonts\/knockout.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/_fonts\/knockout.eot",
+		"oF": 0
+		},
+	"\/_fonts\/knockout.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/_fonts\/knockout.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/_fonts\/knockout.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/_fonts\/knockout.ttf",
+		"oF": 0
+		},
+	"\/_fonts\/knockout.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/_fonts\/knockout.woff",
+		"oF": 0
+		},
 	"\/_fonts\/knockout.woff2": {
 		"cB": 0,
 		"ft": 8192,
@@ -659,6 +690,16 @@
 		"oA": 0,
 		"oAP": "\/_includes\/video\/walking.webm",
 		"oF": 0
+		},
+	"\/_scripts\/flexslider.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/_scripts\/min\/flexslider-min.js",
+		"oF": 3,
+		"sC": 3,
+		"tS": 0
 		},
 	"\/_scripts\/html5ext.js": {
 		"ft": 64,
