@@ -961,7 +961,6 @@ form.nav_contact input[type='button']:hover {
   line-height: 1.5em;
 }
 .nav-pane .nav-items a {
-  display: block;
   text-align: center;
   font-size: 5em;
   padding-left: 20px;
@@ -1049,9 +1048,6 @@ form.nav_contact input[type='button']:hover {
   height: 0;
 }
 .nav-pane [class^="list"] label {
-  display: none;
-}
-.nav-pane [class^="icon-"] {
   display: none;
 }
 .nav-pane.home {
@@ -1519,11 +1515,11 @@ h2.headline a:hover {
 .s2 h3 {
   font-size: 1.375em;
   letter-spacing: 3px;
-  line-height: 1.3em;
   padding: 16px 0 10px 90px;
   font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
   font-weight: 700;
   line-height: 1.5em;
+  line-height: 1.3em;
   text-transform: uppercase;
 }
 .s2 h4 {
