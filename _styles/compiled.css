@@ -914,10 +914,10 @@ form.nav_contact input[type='button'] {
   border: 0;
   color: #d3cbbd;
   display: block;
-  float: right;
   font-size: 13px;
   letter-spacing: 2px;
   margin-top: 15px;
+  max-width: 260px;
   outline: 0;
   padding: 1.2em 0;
   font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
@@ -930,8 +930,8 @@ form.nav_contact input[type='button'] {
   text-indent: 0;
 }
 form.nav_contact input[type='button']:after {
-  content: '\e959';
-  font-family: 'icomoon';
+  content: '\e900';
+  font-family: 'knockout';
   font-size: 14px;
   padding-left: 10px;
   vertical-align: bottom;
@@ -1394,10 +1394,10 @@ h2.headline a:hover {
   border: 0;
   color: #d3cbbd;
   display: block;
-  float: right;
   font-size: 13px;
   letter-spacing: 2px;
   margin-top: 15px;
+  max-width: 260px;
   outline: 0;
   padding: 1.2em 0;
   font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
@@ -1411,8 +1411,8 @@ h2.headline a:hover {
   margin: 25px auto 0;
 }
 .overlay .button:after {
-  content: '\e959';
-  font-family: 'icomoon';
+  content: '\e900';
+  font-family: 'knockout';
   font-size: 14px;
   padding-left: 10px;
   vertical-align: bottom;
@@ -1480,10 +1480,10 @@ h2.headline a:hover {
   border: 0;
   color: #d3cbbd;
   display: block;
-  float: right;
   font-size: 13px;
   letter-spacing: 2px;
   margin-top: 15px;
+  max-width: 260px;
   outline: 0;
   padding: 1.2em 0;
   font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
@@ -1495,8 +1495,8 @@ h2.headline a:hover {
   width: 300px;
 }
 .slider .button:after {
-  content: '\e959';
-  font-family: 'icomoon';
+  content: '\e900';
+  font-family: 'knockout';
   font-size: 14px;
   padding-left: 10px;
   vertical-align: bottom;
@@ -1519,11 +1519,11 @@ h2.headline a:hover {
 .s2 h3 {
   font-size: 1.375em;
   letter-spacing: 3px;
+  line-height: 1.3em;
   padding: 16px 0 10px 90px;
   font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
   font-weight: 700;
   line-height: 1.5em;
-  line-height: 1.3em;
   text-transform: uppercase;
 }
 .s2 h4 {
@@ -1533,9 +1533,7 @@ h2.headline a:hover {
   font-weight: 600;
   line-height: 1.5em;
 }
-.s2 span.icon-glove,
-.s2 span.icon-weight,
-.s2 span.icon-heart {
+.s2 [class^="icon-"] {
   font-size: 3.5em;
   left: 0;
   line-height: 80px;
@@ -1546,12 +1544,9 @@ h2.headline a:hover {
   font-size: 4.5em;
   padding-top: 3px;
 }
-.s2 p {
-  font-size: 0.85em;
-  line-height: 1.647058823529412em;
-  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
-  font-weight: 400;
-  line-height: 1.5em;
+.s2 span.icon-heart {
+  font-size: 4em;
+  padding-top: 3px;
 }
 .s2 .cell.three {
   width: 25%;
@@ -1566,52 +1561,34 @@ h2.headline a:hover {
   width: 29%;
 }
 .s2 .cell.three.last h3 {
-  padding-left: 70px;
+  padding-left: 77px;
+}
+.s2 p {
+  font-size: 13.5px;
+}
+.s3 .snipe {
+  display: block;
 }
 .s3 h5 {
-  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
-  font-weight: 300;
-  line-height: 1.5em;
   font-size: 1.8125em;
   letter-spacing: 2px;
   line-height: 1.241379310344828em;
-  margin: 100px 0 40px;
+  margin: 17px 0 24px 42px;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
   text-transform: uppercase;
 }
 .s3 h6 {
-  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
-  font-weight: 600;
-  line-height: 1.5em;
   display: inline-block;
   font-size: 1.275em;
   letter-spacing: 4px;
   line-height: 1.272727272727273em;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 600;
+  line-height: 1.5em;
   text-transform: uppercase;
   vertical-align: middle;
-}
-.s4 .cells {
-  margin-top: 180px;
-}
-.s4 .cell:nth-child(3) {
-  text-align: right;
-}
-.s4 p.heading {
-  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
-  font-weight: 300;
-  line-height: 1.5em;
-  font-size: 1.5em;
-  letter-spacing: 3px;
-  line-height: 1.25em;
-  padding-bottom: 12px;
-  text-transform: uppercase;
-}
-.s4 p.body {
-  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
-  font-weight: 400;
-  line-height: 1.5em;
-  font-size: 0.9375em;
-  line-height: 1.866666666666667em;
-  padding-bottom: 14px;
 }
 .cell {
   display: inline-block;
@@ -1622,11 +1599,99 @@ h2.headline a:hover {
   margin-right: 4.5%;
   width: 30%;
 }
-.cell.three:nth-of-type(3n) {
+.cell.three.last {
   margin-right: 0;
 }
 .cell .button {
   width: 100%;
+}
+.cell.two {
+  margin: 2em 8% 0 0;
+  width: 33%;
+}
+.cell.two.last {
+  margin-right: 0;
+  width: 58%;
+}
+.cell p {
+  font-size: 14px;
+  line-height: 21px;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+.cell div.healcode div.list_view li {
+  border: 0;
+  padding-top: 0;
+}
+.cell div.healcode .class_list h1.class_name {
+  font-size: 1.8em;
+  letter-spacing: 2px;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 600;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+.cell div.healcode .class_list .class_description {
+  font-size: 14px;
+  letter-spacing: -0.23px;
+  line-height: 21px;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+.cell div.healcode .class_list .class_description div span {
+  font-size: 14px !important;
+  letter-spacing: -0.2px;
+}
+.cell div.healcode .class_list .class_offered_link {
+  border-radius: 0;
+  box-shadow: none;
+  background-color: #3db779;
+  border: 0;
+  color: #d3cbbd;
+  display: block;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-top: 15px;
+  max-width: 260px;
+  outline: 0;
+  padding: 1.2em 0;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 600;
+  line-height: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all ease 400ms;
+  width: 100%;
+}
+.cell div.healcode .class_list .class_offered_link:after {
+  content: '\e900';
+  font-family: 'knockout';
+  font-size: 14px;
+  padding-left: 10px;
+  vertical-align: bottom;
+}
+.cell div.healcode .class_list .class_offered_link:hover {
+  background-color: $orange;
+  cursor: pointer;
+}
+.cell div.healcode .class_list .class_offered_link a {
+  color: #d3cbbd;
+  font-weight: inherit;
+}
+.cell div.healcode .class_list .class_show {
+  margin: 0 0 10px;
+}
+.cell div.healcode div.hc_footer {
+  display: none !important;
+}
+span.icon-glove {
+  font-size: 2em;
+  left: 0;
+  line-height: 80px;
+  position: absolute;
+  top: 0;
 }
 .icon-logo-full-outline {
   font-size: 3.25em;

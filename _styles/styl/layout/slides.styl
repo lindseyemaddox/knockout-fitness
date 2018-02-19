@@ -52,9 +52,9 @@
   h3
     font-size: 1.375em
     letter-spacing: 3px
+    line-height: 1.3em
     padding: 16px 0 10px 90px
     primary-font($bold)
-    line-height: 1.3em
     text-transform: uppercase
 
   h4
@@ -62,9 +62,7 @@
     line-height: 1.4666666666666666em
     primary-font($semibold)
 
-  span.icon-glove,
-  span.icon-weight,
-  span.icon-heart
+  [class^="icon-"]
     font-size: 3.5em
     left: 0
     line-height: 80px
@@ -75,62 +73,49 @@
     font-size: 4.5em
     padding-top: 3px
 
-  p
-    font-size: 0.85em
-    line-height: 1.6470588235294117em
-    primary-font($normal)
+  span.icon-heart
+    font-size: 4em
+    padding-top: 3px
 
   .cell.three
     width: 25%
+
     &.first
       width: 36%
+
       h3
         padding-left: 70px
+
     &.last
       width: 29%
+
       h3
-        padding-left: 70px
+        padding-left: 77px
+
+  p
+    font-size: 13.5px
 
 .s3
 
+  .snipe
+    display: block
+
   h5
-    primary-font($light)
     font-size: 1.8125em
     letter-spacing: 2px
     line-height: 1.2413793103448276em
-    margin: 100px 0 40px
+    margin: 17px 0 24px 42px
+    primary-font($light)
     text-transform: uppercase
 
   h6
-    primary-font($semibold)
     display: inline-block
     font-size: 1.275em
     letter-spacing: 4px
     line-height: 1.2727272727272727em
+    primary-font($semibold)
     text-transform: uppercase
     vertical-align: middle
-
-.s4
-
-  .cells
-    margin-top: 180px
-
-  .cell:nth-child(3)
-    text-align: right
-
-  p.heading
-    primary-font($light)
-    font-size: 1.5em
-    letter-spacing: 3px
-    line-height: 1.25em
-    padding-bottom: 12px
-    text-transform: uppercase
-
-  p.body
-    primary-font($normal)
-    font-size: 0.9375em
-    line-height: 1.8666666666666667em
-    padding-bottom: 14px
 
 .cell
   display: inline-block
@@ -141,8 +126,67 @@
     margin-right: 4.5%
     width: 30%
 
-    &:nth-of-type(3n)
+    &.last
       margin-right: 0
 
   .button
     width: 100%
+
+  &.two
+    margin: 2em 8% 0 0
+    width: 33%
+
+    &.last
+      margin-right: 0
+      width: 58%
+
+  p
+    font-size: 14px
+    line-height: 21px
+    primary-font($normal)
+
+  div.healcode
+
+    div.list_view li
+      border: 0
+      padding-top: 0
+
+    .class_list
+
+      h1.class_name
+        font-size: 1.8em
+        letter-spacing: 2px
+        primary-font($semibold)
+        text-transform: uppercase
+
+      .class_description
+        font-size: 14px
+        letter-spacing: -.23px
+        line-height: 21px
+        primary-font($normal)
+
+        div span
+          font-size: 14px!important
+          letter-spacing: -.2px
+
+      .class_offered_link
+        border-radius: 0
+        box-shadow: none
+        button(100%)
+
+        a
+          color: $white
+          font-weight: inherit
+
+      .class_show
+        margin: 0 0 10px
+
+    div.hc_footer
+      display: none!important
+
+span.icon-glove
+  font-size: 2em
+  left: 0
+  line-height: 80px
+  position: absolute
+  top: 0
