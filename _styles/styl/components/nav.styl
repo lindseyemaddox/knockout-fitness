@@ -9,7 +9,6 @@ nav-icon-view()
       transition: color 200ms ease
 
       .list-item
-        opacity: 0
         display: block
 
       span
@@ -65,13 +64,21 @@ nav-icon-view()
       vertical-align: middle
 
     .list-item
-      font-size: 0.35em
-      vertical-align: middle
-      height: 0
-      padding-left: 0.35em
+      color: $red
+      font-size: 0.18em
+      vertical-align: top
       text-transform: uppercase
-      primary-font($light)
+      primary-font($normal)
+      letter-spacing: 0
       line-height: 1em
+      position: absolute
+      right: 60px
+      text-align: right
+      top: 43px
+      width: 250px
+
+      @media screen and (max-width: 1200px)
+        visibility: hidden
 
     &.sub
       font-size: 2em
@@ -84,6 +91,11 @@ nav-icon-view()
 
 [class^="list"]
   position: absolute
+
+  &:hover a
+    span.list-item
+      color: $green
+      transition: color 400ms ease
 
   input.droppers
     position: absolute
@@ -124,9 +136,6 @@ nav-icon-view()
 
       &:before
         color: $red
-
-      span
-        color: $white
 
       .dropdown span.bar
         background: $white

@@ -647,8 +647,8 @@ html {
   font-family: 'knockout';
   font-style: normal;
   font-weight: normal;
-  src: url("/Users/lindseymaddox/src/knockout-fitness/_fonts/knockout.eot?7hnaqn");
-  src: url("/Users/lindseymaddox/src/knockout-fitness/_fonts/knockout.eot?7hnaqn#iefix") format('embedded-opentype'), url("/Users/lindseymaddox/src/knockout-fitness/_fonts/knockout.woff2?7hnaqn") format('woff2'), url("/Users/lindseymaddox/src/knockout-fitness/_fonts/knockout.ttf?7hnaqn") format('truetype'), url("/Users/lindseymaddox/src/knockout-fitness/_fonts/knockout.woff?7hnaqn") format('woff'), url("/Users/lindseymaddox/src/knockout-fitness/_fonts/knockout.svg?7hnaqn#knockout") format('svg');
+  src: url("/Users/lindseyemaddox/src/knockout-fitness/_fonts/knockout.eot?7hnaqn");
+  src: url("/Users/lindseyemaddox/src/knockout-fitness/_fonts/knockout.eot?7hnaqn#iefix") format('embedded-opentype'), url("/Users/lindseyemaddox/src/knockout-fitness/_fonts/knockout.woff2?7hnaqn") format('woff2'), url("/Users/lindseyemaddox/src/knockout-fitness/_fonts/knockout.ttf?7hnaqn") format('truetype'), url("/Users/lindseyemaddox/src/knockout-fitness/_fonts/knockout.woff?7hnaqn") format('woff'), url("/Users/lindseyemaddox/src/knockout-fitness/_fonts/knockout.svg?7hnaqn#knockout") format('svg');
 }
 [class^="icon-"],
 [class*=" icon-"] {
@@ -722,6 +722,17 @@ html {
   margin: 0 auto;
   max-width: 1000px;
 }
+@media screen and (max-width: 1400px) {
+  .wrapper {
+    margin: 0 0 0 30px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    margin: 0 70px 0 30px;
+    max-width: 100%;
+  }
+}
 .layout {
   background-color: rgba(211,203,189,0.67);
 }
@@ -735,7 +746,7 @@ html {
 .layout .main .grid {
   height: 100vh;
   margin: 0 auto;
-  padding: 35px 0 150px;
+  padding: 35px 0 20px;
 }
 .layout .sidebar {
   bottom: 0;
@@ -983,15 +994,25 @@ form.nav_contact input[type='button']:hover {
   vertical-align: middle;
 }
 .nav-pane .nav-items a .list-item {
-  font-size: 0.35em;
-  vertical-align: middle;
-  height: 0;
-  padding-left: 0.35em;
+  color: #c33;
+  font-size: 0.18em;
+  vertical-align: top;
   text-transform: uppercase;
   font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5em;
+  letter-spacing: 0;
   line-height: 1em;
+  position: absolute;
+  right: 60px;
+  text-align: right;
+  top: 43px;
+  width: 250px;
+}
+@media screen and (max-width: 1200px) {
+  .nav-pane .nav-items a .list-item {
+    visibility: hidden;
+  }
 }
 .nav-pane .nav-items a.sub {
   font-size: 2em;
@@ -1004,6 +1025,10 @@ form.nav_contact input[type='button']:hover {
 }
 [class^="list"] {
   position: absolute;
+}
+[class^="list"]:hover a span.list-item {
+  color: #3db779;
+  transition: color 400ms ease;
 }
 [class^="list"] input.droppers {
   position: absolute;
@@ -1034,7 +1059,6 @@ form.nav_contact input[type='button']:hover {
   transition: color 200ms ease;
 }
 .nav-pane .nav-items a .list-item {
-  opacity: 0;
   display: block;
 }
 .nav-pane .nav-items a span {
@@ -1062,9 +1086,6 @@ form.nav_contact input[type='button']:hover {
 }
 .nav-pane.home .nav-items a:before {
   color: #c33;
-}
-.nav-pane.home .nav-items a span {
-  color: #d3cbbd;
 }
 .nav-pane.home .nav-items a .dropdown span.bar {
   background: #d3cbbd;
@@ -1304,11 +1325,20 @@ footer {
   vertical-align: bottom;
 }
 .logo {
-  margin: 10vh 15% 0;
+  bottom: 5vh;
+  height: 76vh;
+  margin: 0 15%;
+  max-height: 700px;
+  position: absolute;
   width: 70%;
 }
 .snipe {
   width: 180px;
+}
+@media screen and (max-width: 500px) {
+  .snipe {
+    width: 120px;
+  }
 }
 h2.headline {
   color: #d3cbbd;
@@ -1438,6 +1468,7 @@ h2.headline a:hover {
 .slides {
   height: 100% /* Or set a fixed height */;
   overflow: hidden;
+  padding-bottom: 40px;
   position: relative;
 }
 .slider {
@@ -1452,9 +1483,18 @@ h2.headline a:hover {
   display: inline-block;
   font-size: 1rem;
   height: 100%;
+  opacity: 0;
+  overflow-y: scroll;
+  position: relative;
+  transition: all 600ms ease;
   vertical-align: top;
   white-space: normal;
   width: 100%;
+}
+@media screen and (max-width: 500px) {
+  .slider > * {
+    opacity: 1;
+  }
 }
 #s1:target ~ .slider {
   transform: translateX(0%);
@@ -1501,16 +1541,28 @@ h2.headline a:hover {
   background-color: $orange;
   cursor: pointer;
 }
+@media screen and (max-width: 500px) {
+  .s1,
+  .scroll-indicator > :nth-child(3) {
+    display: none;
+  }
+}
 .s2 h2 {
   font-size: 1.5em;
   letter-spacing: 1px;
   line-height: 1.2em;
-  margin-top: 5em;
+  margin-top: 3em;
   padding-bottom: 30px;
   font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
   font-weight: 700;
   line-height: 1.5em;
   text-transform: uppercase;
+}
+@media screen and (max-height: 768px) {
+  .s2 h2 {
+    margin-top: -6em;
+    padding: 0 0 80px 230px;
+  }
 }
 .s2 h3 {
   font-size: 1.375em;
@@ -1557,7 +1609,7 @@ h2.headline a:hover {
   width: 29%;
 }
 .s2 .cell.three.last h3 {
-  padding-left: 77px;
+  padding-left: 73px;
 }
 .s2 p {
   font-size: 13.5px;
@@ -1616,9 +1668,53 @@ h2.headline a:hover {
   font-weight: 400;
   line-height: 1.5em;
 }
+.cell div.healcode {
+  margin-top: 12px;
+}
+.cell div.healcode div.list_view td {
+  padding: 3px 0 0 0 !important;
+}
 .cell div.healcode div.list_view li {
   border: 0;
-  padding-top: 0;
+  padding: 0 120px 2px 5px;
+}
+.cell div.healcode div.list_view li div.signup {
+  bottom: 10px;
+  top: inherit;
+}
+.cell div.healcode div.list_view li.schedule_date,
+.cell div.healcode div.list_view li.beginning_fitness_boxing {
+  color: #d3cbbd;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+.cell div.healcode div.list_view li.schedule_date {
+  margin-top: 23px;
+}
+.cell div.healcode div.list_view li.odd {
+  background: none;
+  margin-bottom: 20px;
+  position: relative;
+}
+.cell div.healcode div.list_view li .classname a {
+  color: #3db779;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 700;
+  line-height: 1.5em;
+  text-decoration: none;
+}
+.cell div.healcode .info_wrapper .hc_time {
+  color: #d3cbbd;
+  font-size: 12px;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+.cell div.healcode table.schedule tr td {
+  border-top: 1px solid rgba(211,203,189,0.3);
 }
 .cell div.healcode .class_list h1.class_name {
   font-size: 1.8em;
@@ -1677,7 +1773,42 @@ h2.headline a:hover {
   font-weight: inherit;
 }
 .cell div.healcode .class_list .class_show {
-  margin: 0 0 10px;
+  margin: 0 0 40px;
+}
+.cell div.healcode .class_list .class_show .back_link a {
+  display: block;
+  color: #3db779;
+  font-size: 12px;
+  margin-top: 20px;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+  text-decoration: none;
+}
+.cell div.healcode .class_list .class_show .back_link a:nth-of-type(2) a {
+  display: none;
+}
+.cell div.healcode h1 {
+  color: #d3cbbd;
+  font-size: 1.5em;
+  line-height: 2em;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 700;
+  line-height: 1.5em;
+}
+.cell div.healcode a.action_icon {
+  margin: 6px 0 0 5px;
+  color: #3db779;
+  font-size: 9px;
+  line-height: 1em;
+}
+.cell div.healcode a.action_icon .action_text.my_account_text {
+  color: #3db779;
+  font-size: 12px;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+  line-height: 0;
 }
 .cell div.healcode div.hc_footer {
   display: none !important;
@@ -1688,6 +1819,61 @@ span.icon-glove {
   line-height: 80px;
   position: absolute;
   top: 0;
+}
+#s1:target ~ .slider > :nth-child(1) {
+  opacity: 1;
+}
+#s2:target ~ .slider  > :nth-child(2) {
+  opacity: 1;
+}
+#s3:target ~ .slider > :nth-child(3) {
+  opacity: 1;
+}
+div.healcode li div.signup {
+  bottom: 25px;
+  top: inherit;
+}
+div.healcode li div.signup a.hc-button,
+div.healcode li div.signup input.hc-button {
+  background: inherit;
+  border-radius: 0;
+  background-color: #3db779;
+  border: 0;
+  color: #d3cbbd;
+  display: block;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-top: 15px;
+  max-width: 260px;
+  outline: 0;
+  padding: 1.2em 0;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 600;
+  line-height: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all ease 400ms;
+  width: 100px;
+  font-size: 10px;
+  padding: 10px 0;
+}
+div.healcode li div.signup a.hc-button:after,
+div.healcode li div.signup input.hc-button:after {
+  content: '\e900';
+  font-family: 'knockout';
+  font-size: 14px;
+  padding-left: 10px;
+  vertical-align: bottom;
+}
+div.healcode li div.signup a.hc-button:hover,
+div.healcode li div.signup input.hc-button:hover {
+  background-color: $orange;
+  cursor: pointer;
+}
+div.healcode li div.signup a.hc-button:after,
+div.healcode li div.signup input.hc-button:after {
+  font-size: 10px;
+  padding-left: 8px;
 }
 .icon-logo-full-outline {
   font-size: 3.25em;

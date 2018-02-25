@@ -2,6 +2,7 @@
 .slides
   height: 100% /* Or set a fixed height */
   overflow: hidden
+  padding-bottom: 40px
   position: relative
 
 .slider
@@ -16,9 +17,16 @@
   display: inline-block
   font-size: 1rem
   height: 100%
+  opacity: 0
+  overflow-y: scroll
+  position: relative
+  transition: all 600ms ease
   vertical-align: top
   white-space: normal
   width: 100%
+
+  @media screen and (max-width: 500px)
+    opacity: 1
 
 #s1:target ~ .slider
   transform: translateX(0%)
@@ -38,16 +46,25 @@
   .button
     button(300px)
 
+.s1,
+.scroll-indicator > :nth-child(3)
+  @media screen and (max-width: 500px)
+    display: none
+
 .s2
 
   h2
     font-size: 1.5em
     letter-spacing: 1px
     line-height: 1.2em
-    margin-top: 5em
+    margin-top: 3em
     padding-bottom: 30px
     primary-font($bold)
     text-transform: uppercase
+
+    @media screen and (max-height: 768px)
+      margin-top: -6em
+      padding: 0 0 80px 230px
 
   h3
     font-size: 1.375em
@@ -90,7 +107,7 @@
       width: 29%
 
       h3
-        padding-left: 77px
+        padding-left: 73px
 
   p
     font-size: 13.5px
@@ -146,10 +163,48 @@
     primary-font($normal)
 
   div.healcode
+    margin-top: 12px
 
-    div.list_view li
-      border: 0
-      padding-top: 0
+    div.list_view
+
+      td
+        padding: 3px 0 0 0 !important
+
+      li
+        border: 0
+        padding: 0 120px 2px 5px
+
+        div.signup
+          bottom: 10px
+          top: inherit
+
+        &.schedule_date,
+        &.beginning_fitness_boxing
+          color: $white
+          primary-font($semibold)
+
+        &.schedule_date
+          margin-top: 23px
+
+        &.odd
+          background: none
+          margin-bottom: 20px
+          position: relative
+
+        .classname a
+          color: $green
+          cursor: pointer
+          font-size: 13px
+          primary-font($bold)
+          text-decoration: none
+
+    .info_wrapper .hc_time
+      color: $white
+      font-size: 12px
+      primary-font($light)
+
+    table.schedule tr td
+      border-top: 1px solid rgba($white, .3)
 
     .class_list
 
@@ -179,7 +234,36 @@
           font-weight: inherit
 
       .class_show
-        margin: 0 0 10px
+        margin: 0 0 40px
+
+        .back_link a
+          display: block
+          color: $green
+          font-size: 12px
+          margin-top: 20px
+          primary-font($normal)
+          text-decoration: none
+
+          &:nth-of-type(2) a
+            display: none
+
+    h1
+      color: $white
+      font-size: 1.5em
+      line-height: 2em
+      primary-font($bold)
+
+    a.action_icon
+      margin: 6px 0 0 5px
+      color: $green
+      font-size: 9px
+      line-height: 1em
+
+      .action_text.my_account_text
+        color: $green
+        font-size: 12px
+        primary-font($normal)
+        line-height: 0
 
     div.hc_footer
       display: none!important
@@ -190,3 +274,29 @@ span.icon-glove
   line-height: 80px
   position: absolute
   top: 0
+
+
+#s1:target ~ .slider > :nth-child(1)
+  opacity: 1
+
+#s2:target ~ .slider  > :nth-child(2)
+  opacity: 1
+
+#s3:target ~ .slider > :nth-child(3)
+  opacity: 1
+
+div.healcode li div.signup
+  bottom: 25px
+  top: inherit
+
+  a.hc-button,
+  input.hc-button
+    background: inherit
+    border-radius: 0
+    button(100px)
+    font-size: 10px
+    padding: 10px 0
+
+    &:after
+      font-size: 10px
+      padding-left: 8px

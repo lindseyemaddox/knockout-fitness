@@ -3,6 +3,13 @@
   margin: 0 auto
   max-width: $layout-max-width
 
+  @media screen and (max-width: 1400px)
+    margin: 0 0 0 30px
+
+  @media screen and (max-width: 1100px)
+    margin: 0 70px 0 30px
+    max-width: 100%
+
 .layout
   background-color: rgba($white .67)
 
@@ -16,7 +23,7 @@
     .grid
       height: 100vh
       margin: 0 auto
-      padding: $sidebar-vertical-padding 0 150px
+      padding: $sidebar-vertical-padding 0 20px
 
   .sidebar
     bottom: 0
