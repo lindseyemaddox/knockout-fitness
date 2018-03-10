@@ -457,7 +457,7 @@ svg:not(root) {
   -webkit-overflow-scrolling: touch;
 }
 .fancybox-error {
-  color: $orange;
+  color: #f15601;
   font-size: 1em;
   line-height: 1.5em;
   margin: 0;
@@ -647,8 +647,8 @@ html {
   font-family: 'knockout';
   font-style: normal;
   font-weight: normal;
-  src: url("/Users/lindseyemaddox/src/knockout-fitness/_fonts/knockout.eot?7hnaqn");
-  src: url("/Users/lindseyemaddox/src/knockout-fitness/_fonts/knockout.eot?7hnaqn#iefix") format('embedded-opentype'), url("/Users/lindseyemaddox/src/knockout-fitness/_fonts/knockout.woff2?7hnaqn") format('woff2'), url("/Users/lindseyemaddox/src/knockout-fitness/_fonts/knockout.ttf?7hnaqn") format('truetype'), url("/Users/lindseyemaddox/src/knockout-fitness/_fonts/knockout.woff?7hnaqn") format('woff'), url("/Users/lindseyemaddox/src/knockout-fitness/_fonts/knockout.svg?7hnaqn#knockout") format('svg');
+  src: url("/Users/lindseyemaddox/src/knockout-fitness/_fonts/knockout.eot?d2kefz");
+  src: url("/Users/lindseyemaddox/src/knockout-fitness/_fonts/knockout.eot?d2kefz#iefix") format('embedded-opentype'), url("/Users/lindseyemaddox/src/knockout-fitness/_fonts/knockout.ttf?d2kefz") format('truetype'), url("/Users/lindseyemaddox/src/knockout-fitness/_fonts/knockout.woff?d2kefz") format('woff'), url("/Users/lindseyemaddox/src/knockout-fitness/_fonts/knockout.svg?d2kefz#knockout") format('svg');
 }
 [class^="icon-"],
 [class*=" icon-"] {
@@ -664,6 +664,9 @@ html {
 }
 .icon-arrow:before {
   content: "\e900";
+}
+.icon-close:before {
+  content: "\e909";
 }
 .icon-contact:before {
   content: "\e901";
@@ -923,6 +926,7 @@ form.nav_contact input {
 form.nav_contact input[type='button'] {
   background-color: #3db779;
   border: 0;
+  border-radius: 0;
   color: #d3cbbd;
   display: block;
   font-size: 13px;
@@ -935,6 +939,7 @@ form.nav_contact input[type='button'] {
   font-weight: 600;
   line-height: 1.5em;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
   transition: all ease 400ms;
   width: 100%;
@@ -948,7 +953,7 @@ form.nav_contact input[type='button']:after {
   vertical-align: bottom;
 }
 form.nav_contact input[type='button']:hover {
-  background-color: $orange;
+  background-color: #f15601;
   cursor: pointer;
 }
 .nav-pane .nav-items {
@@ -973,8 +978,6 @@ form.nav_contact input[type='button']:hover {
 }
 .nav-pane .nav-items a {
   text-align: center;
-  font-size: 5em;
-  padding-left: 20px;
 }
 .nav-pane .nav-items a:before {
   font-size: 0.5em;
@@ -1045,13 +1048,20 @@ form.nav_contact input[type='button']:hover {
   padding-left: 0;
   height: 40px;
 }
+[class^="list"] a[class^="icon"] {
+  font-size: 5em;
+}
 .nav-pane {
+  border-top: 4px solid #c33;
   transition: 250ms;
   position: fixed;
   transform: translateX(0px);
   top: 0;
   height: 100vh;
   width: 75px;
+}
+.nav-pane .hideshow {
+  display: none;
 }
 .nav-pane .nav-items a {
   cursor: pointer;
@@ -1060,9 +1070,6 @@ form.nav_contact input[type='button']:hover {
 }
 .nav-pane .nav-items a .list-item {
   display: block;
-}
-.nav-pane .nav-items a span {
-  display: none;
 }
 .nav-pane .nav-items .sub {
   font-size: 1.5em;
@@ -1073,6 +1080,7 @@ form.nav_contact input[type='button']:hover {
 }
 .nav-pane [class^="list"] label {
   display: none;
+  width: 100%;
 }
 .nav-pane.home {
   background-color: transparent;
@@ -1096,6 +1104,35 @@ form.nav_contact input[type='button']:hover {
   width: 360px;
   background-color: rgba(28,25,25,0.9);
   box-shadow: 0px 3px 10px rgba(28,25,25,0.2);
+}
+.nav-pane.open .nav-items {
+  margin-top: 40px;
+}
+.nav-pane.open .listtwo,
+.nav-pane.open .listthree,
+.nav-pane.open .listfour,
+.nav-pane.open .listfive {
+  display: none;
+}
+.nav-pane.open .listone {
+  width: 100%;
+}
+.nav-pane.open .listone .icon-private {
+  font-size: 1em;
+}
+.nav-pane.open .listone .icon-private:before {
+  color: #d3cbbd;
+  content: "\e909";
+  display: block;
+  font-size: 1.25em;
+  padding-right: 15px;
+  text-align: right;
+}
+.nav-pane.open .listone .icon-private span.list-item {
+  visibility: hidden;
+}
+.nav-pane.open .hideshow {
+  display: block;
 }
 .nav-pane.open .nav-items .listthree .socials {
   height: 0;
@@ -1227,6 +1264,149 @@ input:checked ~ [class^="icon"] span.bar:nth-child(2) {
 .nav-pane .nav-items .sub.phones {
   display: none;
 }
+div.healcode.appointments {
+  max-width: 300px;
+  width: 100%;
+}
+div.healcode.appointments .ui-datepicker {
+  max-width: 300px;
+  width: 100%;
+}
+div.healcode.appointments a.hc-button {
+  background-color: #3db779;
+  border: 0;
+  border-radius: 0;
+  color: #d3cbbd;
+  display: block;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-top: 15px;
+  max-width: 260px;
+  outline: 0;
+  padding: 1.2em 0;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 600;
+  line-height: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all ease 400ms;
+  width: 100%;
+  max-width: 300px;
+}
+div.healcode.appointments a.hc-button:after {
+  content: '\e900';
+  font-family: 'knockout';
+  font-size: 14px;
+  padding-left: 10px;
+  vertical-align: bottom;
+}
+div.healcode.appointments a.hc-button:hover {
+  background-color: #f15601;
+  cursor: pointer;
+}
+div.healcode.appointments .header {
+  margin-top: 6vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 78vh;
+  margin-bottom: 3vh;
+}
+div.healcode.appointments .header h1 .healcode-title-text,
+div.healcode.appointments .header h1 {
+  color: #d3cbbd;
+  font-size: 1em;
+  letter-spacing: 2px;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 600;
+  line-height: 1.5em;
+  line-height: 1.6em;
+  text-transform: uppercase;
+}
+div.healcode.appointments .header h1 {
+  font-size: 2.4em;
+  line-height: 1em;
+}
+div.healcode.appointments .header .trainer-label a {
+  color: #d3cbbd;
+  font-size: 0.8em;
+  letter-spacing: 0.25em;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 700;
+  line-height: 1.5em;
+  line-height: 3em;
+}
+div.healcode.appointments .header .trainer-label a:hover {
+  color: #3db779;
+  transition: color 400ms ease;
+}
+div.healcode.appointments .header .healcode-appointments p {
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+  line-height: 2em;
+}
+div.healcode.appointments .pre-filters {
+  margin: 30px 0;
+}
+div.healcode.appointments .pre-filters select {
+  color: #403d3c;
+  letter-spacing: 0;
+  margin-bottom: 10px;
+  padding: 3px 0 5px;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 600;
+  line-height: 1.5em;
+  width: 100%;
+  max-width: 300px;
+}
+div.healcode.appointments .pre-filters:nth-child(2) {
+  color: #d3cbbd;
+  font-size: 1em;
+  letter-spacing: 2px;
+  line-height: 2em;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 700;
+  line-height: 1.5em;
+}
+div.healcode.appointments a.action_icon {
+  margin: 0;
+  color: #3db779;
+  font-size: 9px;
+  line-height: 1em;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: -25px;
+}
+div.healcode.appointments a.action_icon.my_account_version {
+  margin: 0;
+}
+div.healcode.appointments a.action_icon .action_text.my_account_text {
+  color: #3db779;
+  font-size: 12px;
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+  line-height: 0;
+  letter-spacing: 0;
+  margin-right: 23px;
+  top: 5px;
+  position: relative;
+}
+div.healcode.appointments a.action_icon .action_text.my_account_text:hover {
+  color: #d3cbbd;
+  transition: color 400ms ease;
+}
+div.healcode.appointments a.action_icon img {
+  margin: 0;
+}
+div.healcode.appointments .ui-state-default,
+div.healcode.appointments .ui-datepicker-header a {
+  font-size: 1em;
+}
 .background-overlay {
   background: rgba(211,203,189,0.6);
   border-top: 4px solid #c33;
@@ -1325,12 +1505,11 @@ footer {
   vertical-align: bottom;
 }
 .logo {
-  bottom: 5vh;
+  bottom: 10vh;
   height: 76vh;
-  margin: 0 15%;
-  max-height: 700px;
+  margin: 0 auto;
   position: absolute;
-  width: 70%;
+  width: 100%;
 }
 .snipe {
   width: 180px;
@@ -1418,6 +1597,7 @@ h2.headline a:hover {
 .overlay .button {
   background-color: #3db779;
   border: 0;
+  border-radius: 0;
   color: #d3cbbd;
   display: block;
   font-size: 13px;
@@ -1430,6 +1610,7 @@ h2.headline a:hover {
   font-weight: 600;
   line-height: 1.5em;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
   transition: all ease 400ms;
   width: 300px;
@@ -1444,7 +1625,7 @@ h2.headline a:hover {
   vertical-align: bottom;
 }
 .overlay .button:hover {
-  background-color: $orange;
+  background-color: #f15601;
   cursor: pointer;
 }
 .overlay.rates .subhead,
@@ -1514,6 +1695,7 @@ h2.headline a:hover {
 .slider .button {
   background-color: #3db779;
   border: 0;
+  border-radius: 0;
   color: #d3cbbd;
   display: block;
   font-size: 13px;
@@ -1526,6 +1708,7 @@ h2.headline a:hover {
   font-weight: 600;
   line-height: 1.5em;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
   transition: all ease 400ms;
   width: 300px;
@@ -1538,7 +1721,7 @@ h2.headline a:hover {
   vertical-align: bottom;
 }
 .slider .button:hover {
-  background-color: $orange;
+  background-color: #f15601;
   cursor: pointer;
 }
 @media screen and (max-width: 500px) {
@@ -1741,6 +1924,7 @@ h2.headline a:hover {
   box-shadow: none;
   background-color: #3db779;
   border: 0;
+  border-radius: 0;
   color: #d3cbbd;
   display: block;
   font-size: 13px;
@@ -1753,6 +1937,7 @@ h2.headline a:hover {
   font-weight: 600;
   line-height: 1.5em;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
   transition: all ease 400ms;
   width: 100%;
@@ -1765,7 +1950,7 @@ h2.headline a:hover {
   vertical-align: bottom;
 }
 .cell div.healcode .class_list .class_offered_link:hover {
-  background-color: $orange;
+  background-color: #f15601;
   cursor: pointer;
 }
 .cell div.healcode .class_list .class_offered_link a {
@@ -1839,6 +2024,7 @@ div.healcode li div.signup input.hc-button {
   border-radius: 0;
   background-color: #3db779;
   border: 0;
+  border-radius: 0;
   color: #d3cbbd;
   display: block;
   font-size: 13px;
@@ -1851,6 +2037,7 @@ div.healcode li div.signup input.hc-button {
   font-weight: 600;
   line-height: 1.5em;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
   transition: all ease 400ms;
   width: 100px;
@@ -1867,7 +2054,7 @@ div.healcode li div.signup input.hc-button:after {
 }
 div.healcode li div.signup a.hc-button:hover,
 div.healcode li div.signup input.hc-button:hover {
-  background-color: $orange;
+  background-color: #f15601;
   cursor: pointer;
 }
 div.healcode li div.signup a.hc-button:after,

@@ -26,20 +26,29 @@ html(lang=locale)
 
     block styles
       link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700')
-      link(rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.0/flexslider.min.css')
       link(rel='stylesheet' type='text/css' href='_styles/compiled.css')
 
     block scripts
       script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js')
       script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
       script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js')
-      script(type='text/javascript' src='_scripts/min/nav-min.js')
-      script(type='text/javascript' src='_scripts/min/main-min.js')
       script(type='text/javascript' src='_scripts/min/html5ext-min.js')
       
       script(type='text/javascript').
         $(document).ready(function() {
           $('.fancybox').fancybox();
+          
+          $('.listone').on('click', function() {
+            toggleNavigation(
+              $('.nav-pane')
+            );
+          });
+
+          function toggleNavigation(nav) {
+            nav.toggleClass('open');
+          }
+          
+          
         });
 
       script(async src='https://www.googletagmanager.com/gtag/js?id=UA-113460726-1')

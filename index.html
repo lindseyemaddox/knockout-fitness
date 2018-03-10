@@ -19,17 +19,26 @@
     <meta property="og:site_name" content="Knockout Fitness Nashville">
     <meta property="og:description" content="At Knockout Fitness, you will train with professional heavyweight boxer and USA boxing coach, Frank Wood. His regulation-sized boxing ring has been the proving ground for hundreds of clients and professional fighters alike.">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.0/flexslider.min.css">
     <link rel="stylesheet" type="text/css" href="_styles/compiled.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
-    <script type="text/javascript" src="_scripts/min/nav-min.js"></script>
-    <script type="text/javascript" src="_scripts/min/main-min.js"></script>
     <script type="text/javascript" src="_scripts/min/html5ext-min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
         $('.fancybox').fancybox();
+        
+        $('.listone').on('click', function() {
+          toggleNavigation(
+            $('.nav-pane')
+          );
+        });
+      
+        function toggleNavigation(nav) {
+          nav.toggleClass('open');
+        }
+        
+        
       });
       
     </script>
@@ -84,7 +93,7 @@
                   <div class="s3"><img src="_images/knockout-fitness.svg" alt="Knockout Fitness logo" class="snipe">
                     <div class="cell two first"><span class="icon-glove"></span>
                       <h5>Personal Training</h5>
-                      <p>Personal Fitness Training is available in both private and semi-private formats by appointment for all levels of fitness. This one-hour interval training workout will strengthen and tone your body while increasing cardiovascular endurance. Burning calories and fat comes naturally and looking fit and trim is the reward.</p><a class="button">Schedule a Session</a>
+                      <p>Personal Fitness Training is available in both private and semi-private formats by appointment for all levels of fitness. This one-hour interval training workout will strengthen and tone your body while increasing cardiovascular endurance. Burning calories and fat comes naturally and looking fit and trim is the reward.</p><a class="button listone">Schedule a Session</a>
                     </div>
                     <div class="cell two last"><span class="icon-glove"></span>
                       <h5>Group Classes</h5>
@@ -100,7 +109,10 @@
             <div class="nav-pane slide-out home">
               <div class="nav-items">
                 <div class="listone">
-                  <input type="checkbox" id="listone" class="droppers"><a href="#s2" class="icon-private"><span class="list-item">Schedule Personal Training</span></a>
+                  <input type="checkbox" id="listone" class="droppers"><a class="icon-private"><span class="list-item">Schedule Personal Training</span></a>
+                  <div class="hideshow">
+                    <healcode-widget data-type="appointments" data-widget-partner="object" data-widget-id="f733438b3b7" data-widget-version="0"></healcode-widget>
+                  </div>
                 </div>
                 <div class="listtwo">
                   <input type="checkbox" id="listtwo" class="droppers"><a class="icon-group"><span class="list-item">Schedule Group Classes</span></a>
