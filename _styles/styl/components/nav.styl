@@ -348,6 +348,9 @@ div.healcode
         font-size: 2.4em
         line-height: 1em
 
+        &.healcode-date-label
+          font-size: 1.5em
+
       .trainer-label a
         color: $white
         font-size: .8em
@@ -416,3 +419,21 @@ div.healcode
     .ui-state-default,
     .ui-datepicker-header a
       font-size: 1em
+
+    &.list_view .header
+      td,
+      td.ui-state-disabled,
+      td.ui-datepicker-current-day,
+      td.ui-datepicker-week-end,
+      td.ui-widget-content .ui-state-disabled,
+      td.ui-widget-header .ui-state-disabled
+        padding-top: 0!important
+        vertical-align: top
+
+    .ui-state-default,
+    .ui-widget-content .ui-state-default,
+    .ui-widget-header .ui-state-default,
+    .ui-state-highlight,
+    .ui-state-active
+      padding: 10px 0
+      text-align: center

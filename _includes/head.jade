@@ -35,10 +35,11 @@ html(lang=locale)
       script(type='text/javascript' src='_scripts/min/html5ext-min.js')
       
       script(type='text/javascript').
+
         $(document).ready(function() {
           $('.fancybox').fancybox();
           
-          $('.listone').on('click', function() {
+          $('.icon-private').on('click', function() {
             toggleNavigation(
               $('.nav-pane')
             );
@@ -47,7 +48,6 @@ html(lang=locale)
           function toggleNavigation(nav) {
             nav.toggleClass('open');
           }
-          
           
         });
 

@@ -1327,6 +1327,9 @@ div.healcode.appointments .header h1 {
   font-size: 2.4em;
   line-height: 1em;
 }
+div.healcode.appointments .header h1.healcode-date-label {
+  font-size: 1.5em;
+}
 div.healcode.appointments .header .trainer-label a {
   color: #d3cbbd;
   font-size: 0.8em;
@@ -1406,6 +1409,23 @@ div.healcode.appointments a.action_icon img {
 div.healcode.appointments .ui-state-default,
 div.healcode.appointments .ui-datepicker-header a {
   font-size: 1em;
+}
+div.healcode.appointments.list_view .header td,
+div.healcode.appointments.list_view .header td.ui-state-disabled,
+div.healcode.appointments.list_view .header td.ui-datepicker-current-day,
+div.healcode.appointments.list_view .header td.ui-datepicker-week-end,
+div.healcode.appointments.list_view .header td.ui-widget-content .ui-state-disabled,
+div.healcode.appointments.list_view .header td.ui-widget-header .ui-state-disabled {
+  padding-top: 0 !important;
+  vertical-align: top;
+}
+div.healcode.appointments .ui-state-default,
+div.healcode.appointments .ui-widget-content .ui-state-default,
+div.healcode.appointments .ui-widget-header .ui-state-default,
+div.healcode.appointments .ui-state-highlight,
+div.healcode.appointments .ui-state-active {
+  padding: 10px 0;
+  text-align: center;
 }
 .background-overlay {
   background: rgba(211,203,189,0.6);
