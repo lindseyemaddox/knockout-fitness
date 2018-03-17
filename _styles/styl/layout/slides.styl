@@ -1,4 +1,7 @@
 
+.hidden
+  display: none
+
 .slides
   height: 100% /* Or set a fixed height */
   overflow: hidden
@@ -50,6 +53,22 @@
 .scroll-indicator > :nth-child(3)
   @media screen and (max-width: 500px)
     display: none
+
+.s1
+  position: relative
+
+  .next
+    position: absolute
+    right: 0
+    text-decoration: none
+    top: 45vh
+
+    &:after
+      animation: blink 2s 13s infinite ease-in-out
+      color: $white
+      content: $icon-arrow
+      font-family: 'knockout'
+      font-size: 30px
 
 .s2
 
@@ -153,14 +172,49 @@
     margin: 2em 8% 0 0
     width: 33%
 
+    &.first
+      width: 58%
+
     &.last
       margin-right: 0
-      width: 58%
 
   p
     font-size: 14px
     line-height: 21px
     primary-font($normal)
+
+    &.details
+      font-size: 13px
+      margin-top: 40px
+      primary-font($bold)
+      line-height: 1.7em
+
+      &:before
+        color: $green
+        content: $icon-asterisk
+        font-family: 'knockout'
+        font-size: 1.2em
+        vertical-align: bottom
+        margin-right: 6px
+
+    a
+      color: $green
+      text-decoration: none
+
+      &:hover
+        opacity: .7
+        transition: opacity 400ms ease
+
+    .item
+      display: block
+      padding-bottom: 5px
+
+      &.first
+        margin-top: 12px
+
+      span.price,
+      a
+        display: inline
 
   div.healcode
     margin-top: 12px
@@ -172,7 +226,7 @@
 
       li
         border: 0
-        padding: 0 120px 2px 5px
+        padding: 0 0 2px
 
         div.signup
           bottom: 10px
@@ -212,6 +266,7 @@
         font-size: 1.8em
         letter-spacing: 2px
         primary-font($semibold)
+        line-height: 1em
         text-transform: uppercase
 
       .class_description
@@ -232,6 +287,9 @@
         a
           color: $white
           font-weight: inherit
+
+          &:hover:after
+            color: $green
 
       .class_show
         margin: 0 0 40px
@@ -300,3 +358,37 @@ div.healcode li div.signup
     &:after
       font-size: 10px
       padding-left: 8px
+
+.fancybox-slide
+  margin: 0 auto
+  position: initial
+  width: 100%
+
+  #frank-bio
+    max-width: 400px
+
+    div.list_view li
+      border-top: 0
+      padding: 0
+
+    div.healcode li div.signup a.hc-button
+      margin-top: 0
+      padding: 4px 0
+
+    div.healcode .classname a,
+    .back_link a
+      color: $green
+      primary-font($bold)
+      text-decoration: none
+
+    div.healcode .trainer_list .trainer_teaches_link
+      padding: 0
+      a
+        button(100%)
+        max-width: 100%
+
+    div.healcode div.hc_footer
+      display: none!important
+
+    .info_wrapper
+      margin-bottom: 10px

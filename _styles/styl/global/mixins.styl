@@ -1,7 +1,7 @@
 
 button(w)
   background-color: $green
-  border: 0
+  border: 1px solid $green
   border-radius: 0
   color: $white
   display: block
@@ -26,5 +26,21 @@ button(w)
     vertical-align: bottom
 
   &:hover
-    background-color: $orange
+    background-color: transparent
+    border: 1px solid $green
     cursor: pointer
+
+    &:after
+      color: $green
+
+close-icon()
+  &:before
+    color: $white
+    content: $icon-close
+    display: block
+    font-size: .25em
+    padding-right: 15px
+    text-align: right
+
+  span.list-item
+    visibility: hidden

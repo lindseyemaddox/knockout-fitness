@@ -1,0 +1,30 @@
+
+.gallery-grid.isotope
+
+  script(type='text/javascript' src='https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js')
+
+  h3 Gallery
+
+  #filters.button-group
+    button.filter(data-filter='.photo') Photos
+    span | 
+    button.filter(data-filter='.video') Videos
+    span | 
+    button.filter(data-filter='.article') Articles
+    span | 
+    button.filter.is-checked(data-filter='*') Show All
+    
+  .photos-grid  
+
+    .gallery-item.photo
+      a.fancybox(class='fancybox' href='#bags' title='heavy bags' rel='photo')
+        img(src='_images/small/bags.jpg' alt='heavy bags')
+        h3.alpha Heavy Bags
+
+      #bags.inline
+        picture
+          <!--[if IE 9]><video style='display: none;'><![endif]-->
+          source(srcset='_images/large/bags.jpg, _images/extralarge/bags.jpg 2x' media='(min-width: 2500px)')
+          source(srcset='_images/medium/bags.jpg, _images/extramedium/bags.jpg 2x' media='(min-width: 1000px)')
+          <!--[if IE 9]></video><![endif]-->
+          img(srcset='_images/small/bags.jpg, _images/medium/bags.jpg 2x' alt='heavy bags')

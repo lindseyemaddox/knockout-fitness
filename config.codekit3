@@ -7,7 +7,7 @@
 		"uuidString": "6F93A0C2-226B-4FE0-AEDC-E66E277B8B86"
 		}
 	],
-"creatorBuild": "26268",
+"creatorBuild": "26330",
 "files": {
 	"\/.gitignore": {
 		"cB": 0,
@@ -53,6 +53,26 @@
 		"oA": 0,
 		"oAP": "\/_fonts\/knockout.woff2",
 		"oF": 0
+		},
+	"\/_images\/app-apple.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/_images\/app-apple.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/_images\/app-google.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/_images\/app-google.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/_images\/burned.png": {
 		"ft": 32768,
@@ -509,7 +529,7 @@
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/_includes\/form.html",
 		"oF": 0,
 		"oS": 0
@@ -520,6 +540,15 @@
 		"oA": 0,
 		"oAP": "\/_includes\/form.php",
 		"oF": 0
+		},
+	"\/_includes\/gallery.jade": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/_includes\/gallery.html",
+		"oF": 0,
+		"oS": 0
 		},
 	"\/_includes\/head.jade": {
 		"cB": 0,
@@ -821,6 +850,56 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/_styles\/fancybox\/core.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/_styles\/fancybox\/core-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/_styles\/fancybox\/fullscreen.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/_styles\/fancybox\/fullscreen-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/_styles\/fancybox\/share.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/_styles\/fancybox\/share-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/_styles\/fancybox\/slideshow.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/_styles\/fancybox\/slideshow-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/_styles\/fancybox\/thumbs.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/_styles\/fancybox\/thumbs-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/_styles\/index-bg.css": {
 		"aP": 1,
 		"bl": 0,
@@ -892,19 +971,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/_styles\/styl\/global\/animations.css",
-		"oF": 0,
-		"oS": 0,
-		"rrU": 0
-		},
-	"\/_styles\/styl\/global\/fancybox.styl": {
-		"aP": 0,
-		"bl": 0,
-		"dS": 0,
-		"ft": 8,
-		"iC": 0,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/_styles\/styl\/global\/fancybox.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0

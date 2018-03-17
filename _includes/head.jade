@@ -27,6 +27,7 @@ html(lang=locale)
     block styles
       link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700')
       link(rel='stylesheet' type='text/css' href='_styles/compiled.css')
+      link(rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css')
 
     block scripts
       script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js')
@@ -40,17 +41,76 @@ html(lang=locale)
           $('.fancybox').fancybox();
           
           $('.icon-private').on('click', function() {
-            toggleNavigation(
+            togglePrivate(
               $('.nav-pane')
             );
           });
 
-          function toggleNavigation(nav) {
-            nav.toggleClass('open');
+          $('.open-private').on('click', function() {
+            togglePrivate(
+              $('.nav-pane')
+            );
+          });
+
+          function togglePrivate(nav) {
+            nav.toggleClass('private');
           }
           
-        });
+          $('.icon-group').on('click', function() {
+            toggleGroup(
+              $('.nav-pane')
+            );
+          });
 
+          function toggleGroup(nav) {
+            nav.toggleClass('group');
+          }
+          
+          $('.icon-contact').on('click', function() {
+            toggleContact(
+              $('.nav-pane')
+            );
+          });
+
+          function toggleContact(nav) {
+            nav.toggleClass('contact');
+          }
+          
+          $('.icon-facebook').on('click', function() {
+            toggleNews(
+              $('.nav-pane')
+            );
+          });
+
+          function toggleNews(nav) {
+            nav.toggleClass('news');
+          }
+          
+          // init Isotope
+          var $grid = $('.photos-grid').isotope({
+            itemSelector: '.gallery-item',
+            layoutMode: 'fitRows'
+          });
+          
+          // bind filter button click
+          $('.filter').on( 'click', 'button', function() {
+            var filterValue = $( this ).attr('data-filter');
+            // use filterFn if matches value
+            filterValue = filterFns[ filterValue ] || filterValue;
+            $grid.isotope({ filter: filterValue });
+          });
+
+          // change is-checked class on buttons
+          $('.button-group').each( function( i, buttonGroup ) {
+            var $buttonGroup = $( buttonGroup );
+            $buttonGroup.on( 'click', 'button', function() {
+              $buttonGroup.find('.is-checked').removeClass('is-checked');
+              $( this ).addClass('is-checked');
+            });
+          });
+          
+        });
+        
       script(async src='https://www.googletagmanager.com/gtag/js?id=UA-113460726-1')
       script.
         window.dataLayer = window.dataLayer || [];

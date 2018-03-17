@@ -38,3 +38,24 @@
     margin-left: $sidebar-width + $sidebar-collapsed-width
   100%
     margin-left: 0
+
+@keyframes blink
+  0%
+    color: rgba(210, 203, 187, 1)
+  40%
+    color: rgba(210, 203, 187, .5)
+
+@keyframes dot
+  0%
+    opacity: 1
+  5%
+    transform: scale(.75)
+    opacity: .75
+  15%
+    transform: scale(1)
+    opacity: 0
+  20%
+    transform: scale(.75)
+    opacity: .75
+  31%
+    opacity: 1

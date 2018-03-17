@@ -20,6 +20,7 @@
     <meta property="og:description" content="At Knockout Fitness, you will train with professional heavyweight boxer and USA boxing coach, Frank Wood. His regulation-sized boxing ring has been the proving ground for hundreds of clients and professional fighters alike.">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700">
     <link rel="stylesheet" type="text/css" href="_styles/compiled.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
@@ -29,14 +30,73 @@
         $('.fancybox').fancybox();
         
         $('.icon-private').on('click', function() {
-          toggleNavigation(
+          togglePrivate(
             $('.nav-pane')
           );
         });
       
-        function toggleNavigation(nav) {
-          nav.toggleClass('open');
+        $('.open-private').on('click', function() {
+          togglePrivate(
+            $('.nav-pane')
+          );
+        });
+      
+        function togglePrivate(nav) {
+          nav.toggleClass('private');
         }
+        
+        $('.icon-group').on('click', function() {
+          toggleGroup(
+            $('.nav-pane')
+          );
+        });
+      
+        function toggleGroup(nav) {
+          nav.toggleClass('group');
+        }
+        
+        $('.icon-contact').on('click', function() {
+          toggleContact(
+            $('.nav-pane')
+          );
+        });
+      
+        function toggleContact(nav) {
+          nav.toggleClass('contact');
+        }
+        
+        $('.icon-facebook').on('click', function() {
+          toggleNews(
+            $('.nav-pane')
+          );
+        });
+      
+        function toggleNews(nav) {
+          nav.toggleClass('news');
+        }
+        
+        // init Isotope
+        var $grid = $('.photos-grid').isotope({
+          itemSelector: '.gallery-item',
+          layoutMode: 'fitRows'
+        });
+        
+        // bind filter button click
+        $('.filter').on( 'click', 'button', function() {
+          var filterValue = $( this ).attr('data-filter');
+          // use filterFn if matches value
+          filterValue = filterFns[ filterValue ] || filterValue;
+          $grid.isotope({ filter: filterValue });
+        });
+      
+        // change is-checked class on buttons
+        $('.button-group').each( function( i, buttonGroup ) {
+          var $buttonGroup = $( buttonGroup );
+          $buttonGroup.on( 'click', 'button', function() {
+            $buttonGroup.find('.is-checked').removeClass('is-checked');
+            $( this ).addClass('is-checked');
+          });
+        });
         
       });
       
@@ -73,12 +133,15 @@
                 <s id="s2"></s>
                 <s id="s3"></s>
                 <div class="slider">
-                  <div class="s1"><img src="_images/knockout-fitness.svg" alt="Knockout Fitness logo" class="logo"></div>
-                  <div class="s2"><img src="_images/knockout-fitness.svg" alt="Knockout Fitness logo" class="snipe">
+                  <div class="s1"><a href="#s2"><img src="_images/knockout-fitness.svg" alt="Knockout Fitness logo" class="logo"></a><a href="#s2" class="next"></a></div>
+                  <div class="s2"><a href="#s1"><img src="_images/knockout-fitness.svg" alt="Knockout Fitness logo" class="snipe"></a>
                     <h2>We work to bring out the best in all of our clients, regardless of age, size, or ability. If you are looking for a training regimen that works, look no further because when it comes to boxing fitness, we're in your corner!</h2>
                     <div class="cell three first"><span class="icon-glove"></span>
                       <h3>Authentic Boxing<br>Instruction</h3>
-                      <p>Knockout Fitness is the creation of professional boxer and USA boxing coach Frank Wood. Since 1995, Knockout Fitness has provided professional and knowledgeable boxing and kickboxing fitness training in a friendly and enjoyable environment. If your fitness routine has become, well, routine, our boxing workout will keep you on your toes. Frank's 25+ years of boxing experience provides you with expert instruction in boxing form and technique creating a safe and fun learning experience to enhance the benefits of your workout.</p>
+                      <p>Knockout Fitness is the creation of professional boxer and USA boxing coach <a data-fancybox data-src="#frank-bio" href="javascript:;">Frank Wood</a>. Since 1995, Knockout Fitness has provided professional and knowledgeable boxing and kickboxing fitness training in a friendly and enjoyable environment. If your fitness routine has become, well, routine, our boxing workout will keep you on your toes. Frank's 25+ years of boxing experience provides you with expert instruction in boxing form and technique creating a safe and fun learning experience to enhance the benefits of your workout.</p>
+                      <div id="frank-bio" class="hidden">
+                        <healcode-widget data-type="staff_lists" data-widget-partner="object" data-widget-id="f721458b3b7" data-widget-version="0"></healcode-widget>
+                      </div>
                     </div>
                     <div class="cell three"><span class="icon-weight"></span>
                       <h3>Strengthen<br>and Tone</h3>
@@ -89,14 +152,15 @@
                       <p>Boxing is perhaps the ultimate in high-intensity interval training. Boxing alternates between periods of maximum effort and active recovery providing both an aerobic and anaerobic workout. While most cardio exercise focuses on the lower body, with boxing you engage your entire body. This type of workout builds endurance, speed, and power, and boosts your metabolism resulting in a calorie-busting cardio workout!</p><a href="#s3" class="button">Get Started</a>
                     </div>
                   </div>
-                  <div class="s3"><img src="_images/knockout-fitness.svg" alt="Knockout Fitness logo" class="snipe">
+                  <div class="s3"><a href="#s1"><img src="_images/knockout-fitness.svg" alt="Knockout Fitness logo" class="snipe"></a>
                     <div class="cell two first"><span class="icon-glove"></span>
-                      <h5>Personal Training</h5>
-                      <p>Personal Fitness Training is available in both private and semi-private formats by appointment for all levels of fitness. This one-hour interval training workout will strengthen and tone your body while increasing cardiovascular endurance. Burning calories and fat comes naturally and looking fit and trim is the reward.</p><a class="button listone">Schedule a Session</a>
-                    </div>
-                    <div class="cell two last"><span class="icon-glove"></span>
                       <h5>Group Classes</h5>
                       <script type="text/javascript" src="https://widgets.healcode.com/javascripts/healcode.js"></script><healcode-widget data-type='class_lists' data-widget-partner='object' data-widget-id='f729125b3b7' data-widget-version='0'>
+                    </div>
+                    <div class="cell two last"><span class="icon-glove"></span>
+                      <h5>Personal Training</h5>
+                      <p>Personal Fitness Training is available in both private and semi-private formats by appointment for all levels of fitness. This one-hour interval training workout will strengthen and tone your body while increasing cardiovascular endurance. Burning calories and fat comes naturally and looking fit and trim is the reward.</p><a class="button open-private">Schedule a Session</a>
+                      <p class="details">Dress comfortably in regular workout attire and shoes and get ready for an awesome workout.  You will need boxing hand wraps and gloves.  We train in 16oz hook and loop Velcro closure gloves and hand wraps (2" x 180"). We have used equipment you can borrow, or for convenience you can purchase new equipment <a href="https://clients.mindbodyonline.com/classic/ws?studioid=644302&amp;stype=43" target="_blank">online </a>or on arrival at the gym.<span class="item first"><a href="https://clients.mindbodyonline.com/classic/ws?studioid=644302&amp;stype=43&amp;prodid=100045" target="_blank">hand wraps </a><span class="price">($10.00)</span></span><span class="item"><a href="https://clients.mindbodyonline.com/classic/ws?studioid=644302&amp;stype=43&amp;prodid=100049" target="_blank">Ringside gloves </a><span class="price">($29.99)</span></span><span class="item"><a href="https://clients.mindbodyonline.com/classic/ws?studioid=644302&amp;stype=43&amp;prodid=100047" target="_blank">Cleto Reyes gloves </a><span class="price">($179.00)</span></span></p>
                     </div>
                   </div>
                 </div>
@@ -115,27 +179,55 @@
                 </div>
                 <div class="listtwo">
                   <input type="checkbox" id="listtwo" class="droppers"><a class="icon-group"><span class="list-item">Schedule Group Classes</span></a>
+                  <div class="hideshow">
+                    <h1 class="healcode-title-text">Group Classes</h1>
+                    <healcode-widget data-type="schedules" data-widget-partner="object" data-widget-id="f758301b3b7" data-widget-version="1" class="healcode"></healcode-widget>
+                  </div>
                 </div>
                 <div class="listthree">
-                  <input type="checkbox" id="listthree" class="droppers"><a class="icon-contact"><span class="list-item">Contact Us</span></a>
-                  <div class="sub phones"><a href="tel:16152551359"><span>(615) 255-1359</span></a><a href="file:///Users/lindsey/git/angry-eagle-2017/_includes/overlays/map.html" class="fancybox fancybox.iframe"><span class="map">Pedro Bay, Alaska<span>View Map</span></span></a></div>
-                  <div class="sub form">
-                    <form name="nav_contact" method="POST" class="nav_contact">
-                      <input type="text" name="name" placeholder="name" required>
-                      <input type="tel" name="phone" placeholder="phone" required class="phone">
-                      <input type="email" name="email" placeholder="email">
-                      <input type="button" value="We'll Holler Back" class="submit">
-                    </form>
-                  </div>
+                  <input type="checkbox" id="listthree" class="droppers"><a class="icon-contact"><span class="list-item">Contact</span></a>
+                  <div class="sub phones"><img src="_images/knockout-fitness.svg" alt="Knockout Fitness logo" class="logo"><a href="tel:16152551359" class="tel"><span>(615) 255-1359</span></a><a data-fancybox data-src="#map" href="javascript:;" class="map">2422 Winford Ave<span>Nashville, Tennessee</span><span class="link">View Map</span>
+                      <div id="map" class="hidden"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3222.9888818611194!2d-86.75594588416516!3d36.118128613493035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886465ee5a662df7%3A0x302a393534efc678!2s2422+Winford+Ave%2C+Nashville%2C+TN+37211!5e0!3m2!1sen!2sus!4v1521308982942" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div></a></div>
+                  <healcode-widget data-type="prospects" data-widget-partner="object" data-widget-id="f723661b3b7" data-widget-version="0"></healcode-widget>
                   <div class="sub copyline">
                     <h1>&copy;2018 Knockout Fitness</h1>
                   </div>
                 </div>
                 <div class="listfour">
-                  <input type="checkbox" id="listfour" class="droppers"><a class="icon-facebook"><span class="list-item">Facebook Feed</span></a>
+                  <input type="checkbox" id="listfour" class="droppers"><a class="icon-facebook"><span class="list-item">News</span></a>
+                  <div class="hideshow">
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnashvilleboxing%2F&amp;tabs=timeline&amp;width=300&amp;height=900&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId" width="300" height="900" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"> </iframe>
+                  </div>
                 </div>
                 <div class="listfive">
-                  <input type="checkbox" id="listfive" class="droppers"><a class="icon-mindbody"><span class="list-item">Download Our App</span></a>
+                  <input type="checkbox" id="listfive" class="droppers"><a data-fancybox data-src="#photos" href="javascript:;" class="icon-photos"><span class="list-item">Gallery</span></a>
+                  <div id="photos" class="hidden">
+                    <div class="gallery-grid isotope">
+                      <script type="text/javascript" src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+                      <h3>Gallery</h3>
+                      <div id="filters" class="button-group">
+                        <button data-filter=".photo" class="filter">Photos</button><span>| </span>
+                        <button data-filter=".video" class="filter">Videos</button><span>| </span>
+                        <button data-filter=".article" class="filter">Articles</button><span>| </span>
+                        <button data-filter="*" class="filter is-checked">Show All</button>
+                      </div>
+                      <div class="photos-grid"> 
+                        <div class="gallery-item photo"><a href="#bags" title="heavy bags" rel="photo" class="fancybox fancybox"><img src="_images/small/bags.jpg" alt="heavy bags">
+                            <h3 class="alpha">Heavy Bags</h3></a>
+                          <div id="bags" class="inline">
+                            <picture><!--[if IE 9]><video style='display: none;'><![endif]-->
+                              <source srcset="_images/large/bags.jpg, _images/extralarge/bags.jpg 2x" media="(min-width: 2500px)">
+                              <source srcset="_images/medium/bags.jpg, _images/extramedium/bags.jpg 2x" media="(min-width: 1000px)"><!--[if IE 9]></video><![endif]--><img srcset="_images/small/bags.jpg, _images/medium/bags.jpg 2x" alt="heavy bags">
+                            </picture>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="listsix">
+                  <input type="checkbox" id="listsix" class="droppers"><a data-fancybox data-src="#download" href="javascript:;" class="icon-mindbody"><span class="list-item">Download Our App</span></a>
+                  <div id="download" class="hidden"><a target="_blank" href="https://itunes.apple.com/us/app/knockout-fitness/id1265315131?ls=1&amp;" class="store apple"><img src="_images/app-apple.svg"></a><a target="_blank" href="https://play.google.com/store/apps/details?id=com.fitnessmobileapps.knockoutfitness&amp;hl=en" class="store"><img src="_images/app-google.svg"></a></div>
                 </div>
               </div>
             </div>
