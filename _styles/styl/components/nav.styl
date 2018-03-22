@@ -150,100 +150,103 @@ nav-list-view()
       iframe
         margin-top: 40px
 
-.nav-pane .nav-items
-  height: 100%
-  letter-spacing: 4px
-  margin: 10px auto 0
-  position: relative
+.nav-pane
+  right: 0
 
-  .sub.phones
-    padding-left: 50px
+  .nav-items
+    height: 100%
+    letter-spacing: 4px
+    margin: 10px auto 0
+    position: relative
+
+    .sub.phones
+      padding-left: 50px
+
+      a
+        display: block
+        font-size: 22px
+        height: auto
+        text-decoration: none
+        color: $white
+        padding-bottom: 15px
+        text-transform: uppercase
+        primary-font($light)
+        transition: color 400ms ease
+
+        &.tel:hover
+          color: $green
+
+        &.map
+          font-size: .5em
+          letter-spacing: 2px
+          text-align: center
+          display: block
+          color: $white
+          text-transform: uppercase
+          margin-bottom: 30px
+          primary-font($regular)
+          transition: opacity 400ms ease
+
+          &:hover,
+          &:hover .link
+            color: $green
+            opacity: .7
+
+          span
+            display: block
+
+            &.link
+              color: $green
+              padding-top: 5px
+
+
 
     a
-      display: block
-      font-size: 22px
-      height: auto
-      text-decoration: none
-      color: $white
-      padding-bottom: 15px
-      text-transform: uppercase
-      primary-font($light)
-      transition: color 400ms ease
+      text-align: center
 
-      &.tel:hover
-        color: $green
+      &:before
+        font-size: 0.5em
 
-      &.map
-        font-size: .5em
-        letter-spacing: 2px
-        text-align: center
-        display: block
-        color: $white
-        text-transform: uppercase
-        margin-bottom: 30px
-        primary-font($regular)
-        transition: opacity 400ms ease
-
-        &:hover,
-        &:hover .link
-          color: $green
-          opacity: .7
+      &:not(.sub), &:not(.sub a)
+        margin-bottom: 10px
+        position: relative
 
         span
-          display: block
+          position: absolute
+          top: 1em
+          left: 80px
 
-          &.link
-            color: $green
-            padding-top: 5px
+      &:before
+        vertical-align: middle
 
+      &.icon-contact .list-item
+        text-align: left
 
-
-  a
-    text-align: center
-
-    &:before
-      font-size: 0.5em
-
-    &:not(.sub), &:not(.sub a)
-      margin-bottom: 10px
-      position: relative
-
-      span
+      .list-item
+        color: $red
+        font-size: 0.18em
+        vertical-align: top
+        text-transform: uppercase
+        primary-font($normal)
+        letter-spacing: 0
+        line-height: 1em
         position: absolute
-        top: 1em
-        left: 80px
+        right: 60px
+        text-align: right
+        top: 43px
+        width: 250px
 
-    &:before
-      vertical-align: middle
+        @media screen and (max-width: 1200px)
+          visibility: hidden
 
-    &.icon-contact .list-item
-      text-align: left
+      &.sub
+        font-size: 2em
+        margin-left: 0.65em
+        cursor: pointer
 
-    .list-item
-      color: $red
-      font-size: 0.18em
-      vertical-align: top
-      text-transform: uppercase
-      primary-font($normal)
-      letter-spacing: 0
-      line-height: 1em
-      position: absolute
-      right: 60px
-      text-align: right
-      top: 43px
-      width: 250px
-
-      @media screen and (max-width: 1200px)
-        visibility: hidden
-
-    &.sub
-      font-size: 2em
-      margin-left: 0.65em
-      cursor: pointer
-
-      span
-        padding-left: .75em
-        font-size: .475em
+        span
+          padding-left: .75em
+          font-size: .475em
 
 [class^="list"]
   position: absolute
@@ -252,6 +255,10 @@ nav-list-view()
     span.list-item
       color: $green
       transition: color 400ms ease
+
+      @media screen and (max-width: 1200px)
+        visibility: visible
+        text-shadow: .5px .5px $black
 
   input.droppers
     position: absolute
@@ -269,7 +276,7 @@ nav-list-view()
     height: 40px
 
   a[class^="icon"]
-    font-size: 5em
+    font-size: 80px
 
 .icon-contact
   position: relative
@@ -293,6 +300,10 @@ nav-list-view()
   width: 75px
   nav-icon-view()
 
+  @media screen and (max-width: 800px)
+    height: 0
+    overflow: hidden
+
   &.home
     background-color: transparent
 
@@ -315,7 +326,7 @@ nav-list-view()
   &.group,
   &.contact,
   &.news
-    transform: translateX(-286px)
+    transform: translateX(0px)
     transition: 250ms
     width: 360px
     background-color: rgba($black, 0.9)
@@ -377,7 +388,6 @@ div.healcode,
     .header
       margin-top: 6vh
       overflow-x: hidden
-      overflow-y: scroll
       height: 78vh
       margin-bottom: 3vh
 

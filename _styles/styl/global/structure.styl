@@ -1,4 +1,7 @@
 
+html
+  overflow: hidden!important
+
 .wrapper
   margin: 0 auto
   max-width: $layout-max-width
@@ -6,9 +9,12 @@
   @media screen and (max-width: 1400px)
     margin: 0 0 0 30px
 
-  @media screen and (max-width: 1100px)
-    margin: 0 70px 0 30px
+  @media screen and (max-width: 1200px)
+    margin: 0 100px 0 30px
     max-width: 100%
+
+  @media screen and (max-width: 800px)
+    margin-right: 30px
 
 .layout
   background-color: rgba($white .67)
@@ -25,14 +31,52 @@
       margin: 0 auto
       padding: $sidebar-vertical-padding 0 20px
 
-  .sidebar
-    bottom: 0
-    padding: $sidebar-vertical-padding 0
-    position: absolute
-    right: 0
-    top: 0
-    width: $sidebar-collapsed-width
-    z-index: 99
+.sidebar
+  bottom: 0
+  padding: $sidebar-vertical-padding 0
+  position: absolute
+  right: 0
+  top: 0
+  width: $sidebar-collapsed-width
+  z-index: 99
+
+  @media screen and (max-width: 800px)
+    transition: all 400ms ease
+
+    &.show
+      background-color: rgba($black, .8)
+      width: 100%
+
+      .menu
+        right: 35px
+
+      .nav-pane
+        border-top: none
+        height: 100%
+        right: 0
+
+      .menu:after
+        content: $icon-close
+
+      .listone
+        top: 60px
+
+      .listtwo
+        top: 120px
+
+    .menu
+      display: block
+      cursor: pointer
+      position: fixed
+      z-index: 99999
+
+      &:after
+        content: $icon-menu
+        display: block
+        height: 40px
+        font-size: 40px
+        font-family: 'knockout'
+        color: $green
 
   &--collapsed
     animation: layout-slide 400ms 100ms forwards

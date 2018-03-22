@@ -14,6 +14,9 @@
   transition: 0.8s
   white-space: nowrap
 
+.slider > div
+  overflow: hidden
+
 .slider > *
   background: none 50% no-repeat
   background-size: cover
@@ -28,7 +31,7 @@
   white-space: normal
   width: 100%
 
-  @media screen and (max-width: 500px)
+  @media screen and (max-width: 800px)
     opacity: 1
 
 #s1:target ~ .slider
@@ -51,7 +54,7 @@
 
 .s1,
 .scroll-indicator > :nth-child(3)
-  @media screen and (max-width: 500px)
+  @media screen and (max-width: 800px)
     display: none
 
 .s1
@@ -85,6 +88,11 @@
       margin-top: -6em
       padding: 0 0 80px 230px
 
+    @media screen and (max-width: 400px)
+      font-size: 1.25em
+      line-height: 1.25em
+      font-weight: 300
+
   h3
     font-size: 1.375em
     letter-spacing: 3px
@@ -92,6 +100,10 @@
     primary-font($bold)
     line-height: 1.3em
     text-transform: uppercase
+
+    @media screen and (max-width: 1100px)
+      font-size: 1.1em
+      padding-left: 70px
 
   h4
     font-size: 0.9375em
@@ -105,13 +117,28 @@
     position: absolute
     top: 0
 
+    @media screen and (max-width: 1100px)
+      font-size: 2.5em
+      line-height: 72px
+
+    @media screen and (max-width: 800px)
+      line-height: 66px
+
   span.icon-weight
     font-size: 4.5em
     padding-top: 3px
 
+    @media screen and (max-width: 1100px)
+      font-size: 3.5em
+      padding-top: 0
+
   span.icon-heart
     font-size: 4em
     padding-top: 3px
+
+    @media screen and (max-width: 1100px)
+      font-size: 3em
+      padding-top: 0
 
   .cell.three
     width: 25%
@@ -122,11 +149,24 @@
       h3
         padding-left: 70px
 
+        @media screen and (max-width: 1100px)
+          padding-left: 50px
+
     &.last
       width: 29%
 
       h3
         padding-left: 73px
+
+        @media screen and (max-width: 1100px)
+          padding-left: 60px
+
+  @media screen and (max-width: 900px)
+    .cell.three,
+    .cell.three.first,
+    .cell.three.last
+      width: 100%
+      margin: 0 0 20px
 
   p
     font-size: 13.5px
@@ -143,6 +183,15 @@
     margin: 17px 0 24px 42px
     primary-font($light)
     text-transform: uppercase
+
+    @media screen and (max-width: 1200px)
+      font-size: 1.75em
+
+    @media screen and (max-width: 1100px)
+      font-size: 1.5em
+
+    @media screen and (max-width: 1000px)
+      font-size: 21px
 
   h6
     display: inline-block
@@ -177,6 +226,12 @@
 
     &.last
       margin-right: 0
+
+    @media screen and (max-width: 900px)
+      &.first,
+      &.last
+        width: 100%
+        margin-right: 0
 
   p
     font-size: 14px
@@ -269,6 +324,9 @@
         line-height: 1em
         text-transform: uppercase
 
+        @media screen and (max-width: 800px)
+          font-size: 14.3px
+
       .class_description
         font-size: 14px
         letter-spacing: -.23px
@@ -333,6 +391,8 @@ span.icon-glove
   position: absolute
   top: 0
 
+  @media screen and (max-width: 1100px)
+    line-height: 60px
 
 #s1:target ~ .slider > :nth-child(1)
   opacity: 1
@@ -383,6 +443,9 @@ div.healcode li div.signup
 
     div.healcode .trainer_list .trainer_teaches_link
       padding: 0
+      background-color: inherit
+      box-shadow: none
+
       a
         button(100%)
         max-width: 100%
@@ -392,3 +455,6 @@ div.healcode li div.signup
 
     .info_wrapper
       margin-bottom: 10px
+
+div.healcode div.class_list .class_show *
+  line-height: 1.5em!important

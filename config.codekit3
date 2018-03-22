@@ -16,37 +16,6 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
-	"\/_fonts\/knockout.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/_fonts\/knockout.eot",
-		"oF": 0
-		},
-	"\/_fonts\/knockout.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/_fonts\/knockout.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/_fonts\/knockout.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/_fonts\/knockout.ttf",
-		"oF": 0
-		},
-	"\/_fonts\/knockout.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/_fonts\/knockout.woff",
-		"oF": 0
-		},
 	"\/_fonts\/knockout.woff2": {
 		"cB": 0,
 		"ft": 8192,
@@ -520,7 +489,7 @@
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/_includes\/footer.html",
 		"oF": 0,
 		"oS": 0
@@ -1132,7 +1101,7 @@
 		"rrU": 0
 		},
 	"\/_styles\/styl\/master.styl": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dS": 0,
 		"ft": 8,
@@ -1141,7 +1110,7 @@
 		"oA": 0,
 		"oAP": "\/_styles\/compiled.css",
 		"oF": 2,
-		"oS": 0,
+		"oS": 1,
 		"rrU": 0
 		},
 	"\/_styles\/styl\/reset.styl": {

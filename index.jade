@@ -1,9 +1,9 @@
 
 extends layout
 
-block content
-
 block sidebar
+
+  a.menu
 
   .nav-pane.slide-out.home
 
@@ -35,24 +35,26 @@ block sidebar
         a.icon-contact
           span.list-item Contact
 
-        .sub.phones
-        
-          img.logo(src='_images/knockout-fitness.svg' alt='Knockout Fitness logo')
+        .hideshow
 
-          a.tel(href='tel:16152551359')
-            span (615) 255-1359
-            
-          a.map(data-fancybox data-src="#map" href="javascript:;") 2422 Winford Ave
-            span Nashville, Tennessee
-            span.link View Map
-            #map.hidden
-              |<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3222.9888818611194!2d-86.75594588416516!3d36.118128613493035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886465ee5a662df7%3A0x302a393534efc678!2s2422+Winford+Ave%2C+Nashville%2C+TN+37211!5e0!3m2!1sen!2sus!4v1521308982942" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        
-        healcode-widget(data-type="prospects" data-widget-partner="object" data-widget-id="f723661b3b7" data-widget-version="0")
+          .sub.phones
+          
+            img.logo(src='_images/knockout-fitness.svg' alt='Knockout Fitness logo')
 
-        .sub.copyline
+            a.tel(href='tel:16152551359')
+              span (615) 255-1359
+              
+            a.map(data-fancybox data-src="#map" href="javascript:;") 2422 Winford Ave
+              span Nashville, Tennessee
+              span.link View Map
+              #map.hidden
+                |<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3222.9888818611194!2d-86.75594588416516!3d36.118128613493035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886465ee5a662df7%3A0x302a393534efc678!2s2422+Winford+Ave%2C+Nashville%2C+TN+37211!5e0!3m2!1sen!2sus!4v1521308982942" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          
+          healcode-widget(data-type="prospects" data-widget-partner="object" data-widget-id="f723661b3b7" data-widget-version="0")
 
-          h1 &copy;#{new Date().getFullYear()} Knockout Fitness
+          .sub.copyline
+
+            h1 &copy;#{new Date().getFullYear()} Knockout Fitness
 
       .listfour
         input(type="checkbox" id="listfour" class='droppers')
@@ -76,7 +78,7 @@ block sidebar
         input(type="checkbox" id="listsix" class='droppers')
 
         a.icon-mindbody(data-fancybox data-src="#download" href="javascript:;")
-          span.list-item Download Our App
+          span.list-item Get Our App
             
         #download.hidden
           
@@ -86,4 +88,6 @@ block sidebar
           a.store(target="_blank" href="https://play.google.com/store/apps/details?id=com.fitnessmobileapps.knockoutfitness&hl=en")
             img(src="_images/app-google.svg")
             
+block content
+
           

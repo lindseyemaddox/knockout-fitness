@@ -86,6 +86,16 @@ html(lang=locale)
             nav.toggleClass('news');
           }
           
+          $('.menu').on('click', function() {
+            toggleMenu(
+              $('.sidebar')
+            );
+          });
+
+          function toggleMenu(nav) {
+            nav.toggleClass('show');
+          }
+          
           // init Isotope
           var $grid = $('.photos-grid').isotope({
             itemSelector: '.gallery-item',
