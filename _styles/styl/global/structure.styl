@@ -101,7 +101,28 @@ html
 
 .sidebar.show .nav-pane
   @media screen and (max-width: 400px)
-    height: 80vh
+    height: 84vh
+    top: 60px
+
+  // [class^="list"] [class^="list"]
+  //   @media screen and (max-width: 800px)
+  //     transition: none
+
+  .nav-items a
+
+    @media screen and (max-width: 800px)
+      .list-item
+        visibility: visible
+        color: $white
+
+      &:before
+        color: $white
+
+      &:hover .list-item,
+      &:hover:before
+        color: $green
+        transition: none
+
 
 
 

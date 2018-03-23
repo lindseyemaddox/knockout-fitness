@@ -17,9 +17,10 @@
 .slider > div
   overflow: hidden
 
-  &.s2,
-  &.s3
-    overflow-y: scroll
+  @media screen and (max-width: 900px)
+    &.s2,
+    &.s3
+      overflow-y: scroll
 
 .slider > *
   background: none 50% no-repeat
@@ -87,10 +88,6 @@
     padding-bottom: 30px
     primary-font($bold)
     text-transform: uppercase
-
-    @media screen and (max-height: 768px)
-      margin-top: -6em
-      padding: 0 0 80px 230px
 
     @media screen and (max-width: 400px)
       font-size: 1.25em
