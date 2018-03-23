@@ -1,6 +1,6 @@
 
 div.healcode.prospect
-  width: 80%
+  width: 100%
   min-width: 240px
   max-width: 320px
 
@@ -34,7 +34,12 @@ div.healcode.prospect
         display: inline
 
       &#prospects_email_opt_in
-        margin-top: 30px
+        margin-top: 15px
+        width: auto!important
+
+      &#prospects_promotional_email_opt_in
+        margin-bottom: 10px
+        width: auto!important
 
     .parsley-errors-list
       primary-font($light)
@@ -73,3 +78,10 @@ div.healcode.prospect
     button(100%)
     margin: 10px 0 30px
     max-width: 300px
+
+div.healcode.prospect form .hc-prospect-field select,
+div.healcode.prospect form .hc-prospect-field > input
+  width: 100%!important
+
+div.healcode.prospect form .hc_prospect input.submit.hc-prospect-submit
+  padding: 1.2em 0!important

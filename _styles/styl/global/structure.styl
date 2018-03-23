@@ -7,10 +7,10 @@ html
   max-width: $layout-max-width
 
   @media screen and (max-width: 1400px)
-    margin: 0 0 0 30px
+    margin: 0 0 0 40px
 
   @media screen and (max-width: 1200px)
-    margin: 0 100px 0 30px
+    margin: 0 100px 0 40px
     max-width: 100%
 
   @media screen and (max-width: 800px)
@@ -41,34 +41,52 @@ html
   z-index: 99
 
   @media screen and (max-width: 800px)
-    transition: all 400ms ease
+    // transition: all 400ms ease
 
     &.show
-      background-color: rgba($black, .8)
-      width: 100%
+      background-color: rgba($black, .9)
+      width: 100vw
+      transition: background-color 300ms ease-out
 
       .menu
         right: 35px
 
+        // &:after
+        //   content: $icon-close
+        //   font-size: 40px
+        //
       .nav-pane
         border-top: none
-        height: 100%
+        height: 90vh
+        top: 80px
+        width: 110px
         right: 0
 
-      .menu:after
-        content: $icon-close
+        &.private,
+        &.group,
+        &.contact,
+        &.news
+          padding-top: 0
+          top: 0
+          height: 100vh
+          width: 100%
 
-      .listone
-        top: 60px
+          .nav-items
+            background-color: $black
+            // padding-top: 45px
 
-      .listtwo
-        top: 120px
+        // .nav-items
+        //   margin-top: -15px
+
+        [class^='list']
+          opacity: 1
+          transition: opacity 400ms ease-in
 
     .menu
       display: block
       cursor: pointer
       position: fixed
-      z-index: 99999
+      // z-index: 99999
 
       &:after
         content: $icon-menu

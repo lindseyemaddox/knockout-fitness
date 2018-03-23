@@ -40,6 +40,7 @@ nav-list-view()
 
   .hideshow
     display: block
+    text-align: center
 
     h1.healcode-title-text
       color: $white
@@ -69,7 +70,7 @@ nav-list-view()
         close-icon()
 
   &.group
-    background-color: #000
+    // background-color: #000
     .listone,
     .listthree,
     .listfour,
@@ -105,7 +106,7 @@ nav-list-view()
 
     .listthree
       margin: 0 auto
-      max-width: 300px
+      // max-width: 300px
       position: initial
       width: 100%
 
@@ -140,7 +141,7 @@ nav-list-view()
 
     .listfour
       margin: 0 auto
-      max-width: 300px
+      // max-width: 300px
       position: initial
       width: 100%
 
@@ -151,13 +152,21 @@ nav-list-view()
         margin-top: 40px
 
 .nav-pane
-  right: 0
+
+  h1
+    primary-font($bold)
+    font-size: 1.5em
+    letter-spacing: 1px
+    text-transform: uppercase
+    color: $white
+    text-align: center
 
   .nav-items
     height: 100%
     letter-spacing: 4px
     margin: 10px auto 0
     position: relative
+    // right: 0
 
     .sub.phones
       padding-left: 50px
@@ -250,6 +259,7 @@ nav-list-view()
 
 [class^="list"]
   position: absolute
+  right: 30px
 
   &:hover a
     span.list-item
@@ -291,19 +301,20 @@ nav-list-view()
   overflow: hidden
 
 .nav-pane
+  right: -110px
   border-top: 4px solid $red
-  transition: 250ms
+  // transition: 250ms
   position: fixed
-  transform: translateX(0px)
   top: 0
   height: 100vh
-  width: 75px
   nav-icon-view()
 
   @media screen and (max-width: 800px)
-    height: 0
-    overflow: hidden
+    // overflow: hidden
 
+    // [class^='list']
+    //   opacity: 0
+    //
   &.home
     background-color: transparent
 
@@ -328,7 +339,7 @@ nav-list-view()
   &.news
     transform: translateX(0px)
     transition: 250ms
-    width: 360px
+    width: 320px
     background-color: rgba($black, 0.9)
     box-shadow: 0px 3px 10px rgba($black, 0.2)
     nav-list-view()
@@ -353,6 +364,9 @@ nav-list-view()
         color: $white
         font-size: 2em
         padding-right: 9px
+  //
+  // &.private
+  //   background-color: #000
 
 .listtwo
   top: 60px
