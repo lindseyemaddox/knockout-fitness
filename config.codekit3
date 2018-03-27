@@ -135,6 +135,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/_images\/extralarge\/walking.jpg": {
+		"ft": 16384,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/_images\/extralarge\/walking.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/_images\/extralarge\/williams.jpg": {
 		"ft": 16384,
 		"iS": 274490,
@@ -210,6 +220,16 @@
 		"iS": 62253,
 		"oA": 0,
 		"oAP": "\/_images\/extramedium\/taylor-wood.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/extramedium\/walking.jpg": {
+		"ft": 16384,
+		"iS": 12658,
+		"oA": 0,
+		"oAP": "\/_images\/extramedium\/walking.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -326,6 +346,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/_images\/large\/walking.jpg": {
+		"ft": 16384,
+		"iS": 44643,
+		"oA": 0,
+		"oAP": "\/_images\/large\/walking.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/_images\/large\/williams.jpg": {
 		"ft": 16384,
 		"iS": 95923,
@@ -406,6 +436,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/_images\/medium\/walking.jpg": {
+		"ft": 16384,
+		"iS": 5465,
+		"oA": 0,
+		"oAP": "\/_images\/medium\/walking.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/_images\/medium\/williams.jpg": {
 		"ft": 16384,
 		"iS": 11286,
@@ -481,6 +521,16 @@
 		"iS": 9098,
 		"oA": 0,
 		"oAP": "\/_images\/small\/taylor-wood.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_images\/small\/walking.jpg": {
+		"ft": 16384,
+		"iS": 2717,
+		"oA": 0,
+		"oAP": "\/_images\/small\/walking.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -796,6 +846,26 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/_styles\/queries\/queries-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/_styles\/queries\/queries-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/_styles\/queries\/queries.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/_styles\/queries\/queries-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/_styles\/styl\/components\/dots.styl": {
 		"aP": 0,
 		"bl": 0,
@@ -913,6 +983,19 @@
 		"oS": 0,
 		"rrU": 0
 		},
+	"\/_styles\/styl\/global\/queries.styl": {
+		"aP": 0,
+		"bl": 0,
+		"dS": 0,
+		"ft": 8,
+		"iC": 0,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_styles\/styl\/global\/queries.css",
+		"oF": 0,
+		"oS": 0,
+		"rrU": 0
+		},
 	"\/_styles\/styl\/global\/structure.styl": {
 		"aP": 0,
 		"bl": 0,
@@ -974,19 +1057,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/_styles\/styl\/reset.css",
-		"oF": 0,
-		"oS": 0,
-		"rrU": 0
-		},
-	"\/_styles\/styl\/responsive.styl": {
-		"aP": 0,
-		"bl": 0,
-		"dS": 0,
-		"ft": 8,
-		"iC": 0,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/_styles\/styl\/responsive.css",
 		"oF": 0,
 		"oS": 0,
 		"rrU": 0

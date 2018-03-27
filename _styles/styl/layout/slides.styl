@@ -63,6 +63,7 @@
     display: none
 
 .s1
+  opacity: 1
   position: relative
 
   .next
@@ -88,6 +89,9 @@
     padding-bottom: 30px
     primary-font($bold)
     text-transform: uppercase
+
+    @media screen and (max-width: 800px)
+      margin-top: 0
 
     @media screen and (max-width: 400px)
       font-size: 1.25em
@@ -186,9 +190,9 @@
 
 .s3
 
-  .snipe
-    display: block
-
+  // .snipe
+  //   display: block
+  //
   h5
     font-size: 1.8125em
     letter-spacing: 2px
@@ -233,6 +237,9 @@
   &.two
     margin: 2em 8% 0 0
     width: 33%
+
+    @media screen and (max-width: 800px)
+      margin-top: 0
 
     &.first
       width: 58%
@@ -513,16 +520,30 @@ div.healcode div.trainer_show div.schedule > h1
 
 .logo
   bottom: 10vh
-  height: 76vh
+  height: 73vh
   margin: 0 auto
   position: absolute
   width: 100%
 
 .snipe
   width: 180px
+  display: block
+
+  @media screen and (max-width: 800px)
+    display: none
 
   @media screen and (max-width: 500px)
     width: 120px
+
+.snipe-rep
+  display: none
+  position: absolute
+  top: 35px
+  left: 40px
+  width: 120px
+
+  @media screen and (max-width: 800px)
+    display: block
 
 h2.headline
   color: $white
