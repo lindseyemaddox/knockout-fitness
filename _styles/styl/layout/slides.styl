@@ -237,6 +237,15 @@
     &.first
       width: 58%
 
+      div.healcode
+        padding-bottom: 0
+        div.class_show div.schedule
+          padding-bottom: 0
+          a.action_icon
+            display: none
+        div.list_view li.schedule_date
+          padding: 0
+
     &.last
       margin-right: 0
 
@@ -442,7 +451,12 @@ div.healcode li div.signup
 
     div.list_view li
       border-top: 0
-      padding: 0
+      padding: 5px 0
+      margin-bottom: 10px
+
+      &.schedule_header
+        margin-bottom: 0!important
+        padding-bottom: 0!important
 
     div.healcode li div.signup a.hc-button
       margin-top: 0
@@ -458,6 +472,7 @@ div.healcode li div.signup
       padding: 0
       background-color: inherit
       box-shadow: none
+      width: 100%
 
       a
         button(100%)
@@ -467,11 +482,32 @@ div.healcode li div.signup
       display: none!important
 
     .info_wrapper
-      margin-bottom: 10px
+      margin-bottom: 0
 
 div.healcode div.class_list .class_show *
   line-height: 1.5em!important
 
+div.healcode div.trainer_show div.schedule > h1
+  color: #808080
+
+#frank-bio div.healcode div.trainer_show div.schedule a.action_icon
+  margin: -18px 0 20px
+  color: $green
+  font-size: 12px
+  primary-font($bold)
+
+  & .action_text.my_account_text
+    margin-right: 5px
+
+  &.cart_version
+    margin-top: -22px
+
+#frank-bio
+  div.healcode div.trainer_show div.schedule
+    padding-bottom: 0
+  div.healcode,
+  .healcode
+    padding-bottom: 0
 
 .logo
   bottom: 10vh

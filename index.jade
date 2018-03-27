@@ -54,7 +54,7 @@ block sidebar
 
           .sub.copyline
 
-            h1 &copy;#{new Date().getFullYear()} Knockout Fitness
+            span &copy;#{new Date().getFullYear()} Knockout Fitness
 
       .listfour
         input(type="checkbox" id="listfour" class='droppers')
@@ -64,15 +64,6 @@ block sidebar
           
         .hideshow
           iframe(src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnashvilleboxing%2F&tabs=timeline&width=300&height=900&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="900" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true")  
-            
-      .listfive
-        input(type="checkbox" id="listfive" class='droppers')
-
-        a.icon-photos(data-fancybox data-src="#photos" href="javascript:;")
-          span.list-item Gallery
-
-        #photos.hidden
-          include _includes/gallery
             
       .listsix
         input(type="checkbox" id="listsix" class='droppers')

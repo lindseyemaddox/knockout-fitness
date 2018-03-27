@@ -118,6 +118,9 @@ nav-list-view()
         &:before
           padding-right: 0
 
+      .hideshow
+        position: relative
+
     .sub
       padding-left: 0
 
@@ -160,7 +163,7 @@ nav-list-view()
 
   h1
     primary-font($bold)
-    font-size: 1.5em
+    font-size: 1.25em
     letter-spacing: 1px
     text-transform: uppercase
     color: $white
@@ -171,7 +174,11 @@ nav-list-view()
     letter-spacing: 4px
     margin: 10px auto 0
     position: relative
-    // right: 0
+    overflow-y: scroll
+    overflow-x: hidden
+
+    @media screen and (max-width: 800px)
+      width: 100%
 
     .sub.phones
       padding-left: 50px
@@ -191,7 +198,7 @@ nav-list-view()
           color: $green
 
         &.map
-          font-size: .5em
+          font-size: 12px
           letter-spacing: 2px
           text-align: center
           display: block
@@ -347,6 +354,9 @@ nav-list-view()
     right: 0
     nav-list-view()
 
+    @media screen and (max-width: 800px)
+      width: 100%
+
     .nav-items .listthree
 
       .socials
@@ -375,13 +385,16 @@ nav-list-view()
   top: 60px
 
 .listthree
-  bottom: 200px
+  // bottom: 200px
+  bottom: 140px
 
 .listfour
-  bottom: 140px
+  // bottom: 140px
+  bottom: 80px
 
 .listfive
   bottom: 80px
+  display: none
 
 .listsix
   bottom: 20px
@@ -389,6 +402,10 @@ nav-list-view()
 div.healcode,
 .healcode
   primary-font($normal)
+  padding-bottom: 70px
+
+  div.list_view li div.signup
+    top: 10px
 
   &.appointments
     max-width: 300px
@@ -411,7 +428,7 @@ div.healcode,
       h1 .healcode-title-text,
       h1
         color: $white
-        font-size: 1em
+        font-size: 23px
         letter-spacing: 2px
         primary-font($semibold)
         line-height: 1.6em
@@ -461,14 +478,15 @@ div.healcode,
         primary-font($bold)
 
     a.action_icon
+      display: none
       margin: 0
       color: $green
-      font-size: 9px
+      font-size: 20px
       line-height: 1em
       padding: 0
       position: absolute
       right: 0
-      top: -25px
+      top: -10px
       &.my_account_version
         margin: 0
 
@@ -478,8 +496,8 @@ div.healcode,
         primary-font($normal)
         line-height: 0
         letter-spacing: 0
-        margin-right: 23px
-        top: 5px
+        margin-right: 27px
+        top: 1px
         position: relative
 
         &:hover
@@ -551,12 +569,21 @@ div.healcode,
 .copyline
   position: absolute
   bottom: 50px
-  right: 25%
+  right: 0
 
-  h1
+  span
     color: rgba($white, 0.5)
-    font-size: 0.4em
+    font-size: 9px
     primary-font($semibold)
     text-align: center
     letter-spacing: .25em
     text-transform: uppercase
+
+.hideshow div.healcode.prospect form,
+.hideshow div.healcode.prospect form .hc_prospect,
+.hideshow div.healcode.prospect form .hc_prospect .hc-prospect-field,
+.hideshow div.healcode.prospect form .hc_prospect *
+  font-size: 14px
+
+#bw-widget__schedules-f758301b3b7
+  padding-bottom: 70px

@@ -31,6 +31,9 @@ html
       margin: 0 auto
       padding: $sidebar-vertical-padding 0 20px
 
+      @media screen and (max-width: 800px)
+        padding-top: 100px
+
 .sidebar
   bottom: 0
   padding: $sidebar-vertical-padding 0
@@ -44,13 +47,6 @@ html
     // transition: all 400ms ease
     right: -110px
 
-    .menu
-      right: 35px
-
-      // &:after
-      //   content: $icon-close
-      //   font-size: 40px
-      //
     &.show
       background-color: rgba($black, .9)
       width: 100vw
@@ -60,8 +56,8 @@ html
       .nav-pane
         border-top: none
         height: 90vh
-        top: 80px
-        width: 110px
+        top: 10vh
+        width: 100%
         right: 0
 
         &.private,
@@ -76,6 +72,7 @@ html
 
           .nav-items
             background-color: $black
+            overflow-y: scroll
             // padding-top: 45px
 
         // .nav-items
@@ -85,10 +82,14 @@ html
           opacity: 1
           transition: opacity 400ms ease-in
 
+      .menu:after
+        content: $icon-close
+
     .menu
       display: block
       cursor: pointer
       position: fixed
+      right: 35px
       // z-index: 99999
 
       &:after
