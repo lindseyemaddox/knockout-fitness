@@ -15,7 +15,7 @@
   white-space: nowrap
 
 .slider > div
-  overflow: hidden
+  // overflow: hidden
 
   @media screen and (max-width: 900px)
     &.s2,
@@ -68,9 +68,10 @@
 
   .next
     position: absolute
-    right: 0
+    right: 10px
     text-decoration: none
     top: 45vh
+    display: none
 
     &:after
       animation: blink 2s 13s infinite ease-in-out
